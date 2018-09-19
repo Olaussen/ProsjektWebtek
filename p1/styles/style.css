@@ -70,3 +70,13 @@ li {
 #navbar:first-child{
   padding: 0;
 }
+
+#logo{
+  border-radius: 15%;
+}
+
+.logoinfo{
+  max-width: 30ch;
+  font-size: 12px;
+  font-style: italic;
+}
