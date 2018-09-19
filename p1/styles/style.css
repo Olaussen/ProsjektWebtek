@@ -5,14 +5,15 @@ body{
 }
 
 p {
-  font-family: "Times New Roman", Times, serif;
-
+  font-family: "Verdana", Times, serif;
+  font-size: 18px;
 }
 
-header {
-  font-family: Georgia, serif;
-  color: red
+h1,h2,h3 {
+  font-family: Helvetica, serif;
+  color: #000;
 }
+
 #wrapper{
   background-color: #fefefe;
   min-height: 100vh;
@@ -22,7 +23,7 @@ header {
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px 30px;
-  border: 10px groove gray;
+  border: 10px groove lightgrey;
   border-radius: 15px;
 }
 
