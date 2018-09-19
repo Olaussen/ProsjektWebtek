@@ -6,18 +6,28 @@ body{
 }
 
 p {
-  font-family: "Verdana", Times, serif;
   font-size: 18px;
+  color: rgb(50,70,50);
 }
 
-h1,h2,h3 {
+h1{
+  text-shadow: 1px 1px green;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  font-style: italic;
+  text-align: center;
+  color: rgb(50,60,50);
+
+}
+
+h2,h3 {
   font-family: Helvetica, serif;
-  color: #000;
+  color: rgb(50,60,50);
+  text-decoration: underline;
 
 }
 
 #wrapper{
-  text-align: justify;
   background-color: #fefefe;
   min-height: 100vh;
   width: 960px;
@@ -26,30 +36,37 @@ h1,h2,h3 {
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px 30px;
-  border: 10px groove lightgrey;
+  border: 10px groove rgb(0,100,0);
   border-radius: 15px;
 }
 
-.byline {
-  margin-top: 0px;
-  margin-bottom: 0px;
+#byline {
+  text-align: center;
 }
 
 .par{
-  padding: 20px;
-  margin: 10px;
+  padding: 15px;
+  margin: 5px;
   border: 10px solid transparent;
 
 }
 
-ul li {
+
+li {
   list-style-image: url('../img/burger-icon.svg');
   line-height: 1.5em;
-  padding-left: 1.5em;
+  padding: 1.5em;
+  color: rgb(50,70,50);
+}
+
+#navbar{
+  text-align: center;
 }
 
 #navbar li{
   display: inline;
-  list-style-type: none;
+}
 
+#navbar:first-child{
+  padding: 0;
 }
