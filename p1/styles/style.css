@@ -5,7 +5,6 @@ body{
   font-family: verdana, Times, serif;
 }
 
-<<<<<<< HEAD
 p {
   font-family: "Verdana", Times, serif;
   font-size: 18px;
@@ -14,11 +13,7 @@ p {
 h1,h2,h3 {
   font-family: Helvetica, serif;
   color: #000;
-=======
-h1,h2,h3 {
-  font-family: Georgia, serif;
-  color: rgb(100,100,100)
->>>>>>> 499f5247a38d5bdd080677cb6c69f51bf2d4a980
+
 }
 
 #wrapper{
