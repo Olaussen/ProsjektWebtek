@@ -1,8 +1,17 @@
 
-html, body{
-  background-color: rgb(200,200,200);
-  color: #000;
+body{
+  background-image: url('../img/bgburger2.jpg');
+  background-repeat: repeat;
+}
+
+p {
   font-family: "Times New Roman", Times, serif;
+
+}
+
+header {
+  font-family: Georgia, serif;
+  color: red
 }
 #wrapper{
   background-color: #fefefe;
@@ -13,7 +22,8 @@ html, body{
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px 30px;
-  border: 20px groove yellowgreen;
+  border: 10px groove gray;
+  border-radius: 15px;
 }
 
 .byline {
