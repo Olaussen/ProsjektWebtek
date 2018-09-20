@@ -3,6 +3,7 @@ body{
   background-image: url('../img/bgburger2.jpg');
   background-repeat: repeat;
   font-family: verdana, Times, serif;
+  text-align: center;
 }
 
 p {
@@ -10,21 +11,18 @@ p {
   color: rgb(50,70,50);
 }
 
-h1{
+
+h1,h2,h3 {
   text-shadow: 1px 1px green;
-  border-top: 3px solid;
-  border-bottom: 3px solid;
+  font-variant: small-caps;
   font-style: italic;
   text-align: center;
   color: rgb(50,60,50);
 
 }
 
-h2,h3 {
-  font-family: Helvetica, serif;
-  color: rgb(50,60,50);
-  text-decoration: underline;
-
+h1{
+  font-size: 40px;
 }
 
 #wrapper{
@@ -40,17 +38,13 @@ h2,h3 {
   border-radius: 15px;
 }
 
-#byline {
-  text-align: center;
-}
-
 .par{
   padding: 15px;
-  margin: 5px;
   border: 10px solid transparent;
-
+  text-align: left;
+  width: 75ch;
+  margin: auto;
 }
-
 
 li {
   list-style-image: url('../img/burger-icon.svg');
@@ -59,24 +53,31 @@ li {
   color: rgb(50,70,50);
 }
 
-#navbar{
-  text-align: center;
-}
-
 #navbar li{
   display: inline;
+  padding: 0.5em;
+  font-family: monospace, verdana, helvetica;
+  font-size: 110%;
+}
+
+#navbar li a:link{
+  color: rgb(50,60,50);
+}
+
+#navbar li a:visited{
+  color: rgb(50,60,50);
+}
+
+#navbar li a:hover{
+  color: rgb(0,255,0);
 }
 
 #navbar:first-child{
   padding: 0;
 }
 
-#logo{
-  border-radius: 15%;
-}
-
-.logoinfo{
-  max-width: 30ch;
-  font-size: 12px;
-  font-style: italic;
+#kravliste{
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
 }
