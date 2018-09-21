@@ -81,3 +81,8 @@ li {
   max-width: 400px;
   margin: auto;
 }
+
+#disclaimer{
+  text-align: center;
+  font-size: 15px;
+}
