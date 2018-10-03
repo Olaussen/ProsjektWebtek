@@ -1,0 +1,88 @@
+
+body{
+  background-image: url('../img/sketch.png');
+  background-repeat: repeat;
+  font-family: verdana, Times, serif;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(50,70,50);
+}
+
+
+h1,h2,h3 {
+  text-shadow: 1px 1px green;
+  font-variant: small-caps;
+  font-style: italic;
+  text-align: center;
+  color: rgb(50,60,50);
+
+}
+
+h1{
+  font-size: 40px;
+}
+
+#wrapper{
+  background-color: #fefefe;
+  min-height: 100vh;
+  width: 960px;
+  max-width: 100ch;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px 30px;
+  border: 10px groove rgb(0,100,0);
+  border-radius: 15px;
+}
+
+.par{
+  padding: 15px;
+  border: 10px solid transparent;
+  text-align: left;
+  width: 75ch;
+  margin: auto;
+}
+
+li {
+  list-style-image: url('../img/burger-icon.svg');
+  line-height: 1.5em;
+  padding: 1.5em;
+  color: rgb(50,70,50);
+}
+
+#navbar li{
+  display: inline;
+  padding: 0.5em;
+  font-family: monospace, verdana, helvetica;
+  font-size: 110%;
+}
+
+#navbar li a:link{
+  color: rgb(50,60,50);
+}
+
+#navbar li a:visited{
+  color: rgb(50,60,50);
+}
+
+#navbar li a:hover{
+  color: rgb(0,255,0);
+}
+
+#navbar:first-child{
+  padding: 0;
+}
+
+#kravliste{
+  text-align: left;
+  max-width: 400px;
+  margin: auto;
+}
+
+#disclaimer{
+  text-align: center;
+  font-size: 15px;
+}
