@@ -11,13 +11,12 @@
 <body>
   <div id="wrapper">
     <ul id="navbar">
-      <li><a href="#kunde">Kunde</a></li>
-      <li><a href="#mal">Mål og mening</a></li>
       <li><a href="#malgruppe">Målgruppe</a></li>
+      <li><a href="#nettsidestruktur">Nettsidestruktur</a></li>
+      <li><a href="#sidestruktur">Sidestruktur</a></li>
       <li><a href="#innhold">Innhold</a></li>
       <li><a href="#krav">Krav</a></li>
-      <li><a href="#domene">Domene</a></li>
-      <li><a href="#utfordringer">Utfordringer</a></li>
+      <li><a href="#plan">Plan</a></li>
     </ul>
     <div>
       <h1>The fancy pickle - P2 Design</h1>
@@ -33,29 +32,53 @@
     </div>
     <div class="par">
       <h2 id="nettsidestruktur">Nettsidestruktur</h2>
+      <img src="img/chart.png" alt="Bilde av kartstrukturen til siden">
       <p>
+        Siden skal være navigasjonsvennlig for brukeren ved at det skal være mulig å navigere seg til anne andre sider uansett hvilken du er på. På denne måten vil ikke brukeren "gå seg bort" på siden, og brukeropplevelsen vil dermed bli bedre. 
       </p>
     </div>
     <div class="par">
-      <h2 id="sidelayout">Sidelayout</h2>
+      <h2 id="sidestruktur">Sidestruktur</h2>
       <p>
+        Utgangspunktet for mappe-fil-strukturen vil være som vist på bildet under. Målet er å ha alle like filtyper i samme mappe for å holde det stukturert. Hvor mange filer det skal være i mappe og hva de skal hete er ikke sikkert enda, derfor er dette representert med "[...]" nederst i mappen. Grunnen til dette er at det er usikkert hvor stort bildegalleriet skal være osv.. Alle HTML filene skal befinne seg i den øverste filplasseringen. Selv planen er at det bare skal være én CSS-fil, så skal denne uansett befinne seg i en egen mappe for å holde det strukturert.
+      </p>
+      <img src="img/filepathpic.png" alt="Mockupbilde av hvordan sidestrukturen skal være">
+      <p>
+        Eventuelle endringer i filplasseringen vil selvfølgelig bli dokumentert i "P3 changes".
       </p>
     </div>
     <div class="par">
-      <h2 id="innhold">Innhold</h2>
-      <h3>Hovedside:</h3>
-      <p>Hovedsiden skal være den første siden brukeren kommer til når han eller hun besøker siden. Den skal være visuelt tiltrekkende med ulike grafikker (eks. bilder), samt tekst som lurer brukeren dypere inn i siden (forhåpentligvis til å booke
-        bord). Denne siden skal skrike profesjonalitet, ettersom det er førsteintrykket til brukeren. Her, som på de fleste av sidene, skal navigasjonsbaren vises.
+      <h2 id="innhold">Generell sidelayout:</h2>
+      <p>
+        SKRIV LITT OM GENERELL SIDELAYOUT - TA INSPIRASJON <a href="http://org.ntnu.no/webtek4ever/P2_design.html#pageLayout" target="_blank">HERFRA</a>
       </p>
+      <h2>Innhold</h2>
       <h3>Navigasjonsbar:</h3>
-      <p>Navigasjonsbaren på siden skal være en iøynefallende, pen og oversiktlig del av siden som bruker skal kunne bruke for å navigere til og fra de ulike delene av nettsiden. Denne baren vil fungere som de fleste andre, ved bruk av hyperlinker.
+      <img src="img/navbar.jpg" alt="Mockup av navigasjonsbaren">
+      <p>
+      Navigasjonsbaren er den øverste delen av nettsiden. Denne skal være "fixed" posisjonert, noe som vil si at den, uavhengig av hvor man befinner seg på siden, er øverst. Grunnen til dette er at det skal være enklest mulig for bruker å navigere seg videre på siden. Målet er jo tross alt at bruker skal reservere bord. På navigasjonsbaren skal det være linker til alle de andre sidene. Hvor disse skal være plassert i forhold til hverandre er ikke spikret enda. I midten skal logoen til restauranten stå. Ved å klikke på denne vil man komme tilbake til forsiden, sett ut ifra at man ikke befinner seg der allerede såklart.
       </p>
-      <h3>Om:</h3>
-      <p>Denne delen vil inneholde det meste av det man trenger av informasjon om restauranten. Det skal være en måte finne ut mer om restauranten, og kanskje inneholde noen bilder av matretter etc.. Ettersom dette er en nyåpnet restaurant, så er
-        det ikke så mye meritter og historie å snakke om, så derfor vil denne siden inneholde litt om visjonen til eieren. Man skal også kunne finne ut ulike kontaktinformasjonstyper, som for eksempel: adresse, telefonnummer og email.
+      <h3>Hovedside:</h3>
+      <img src="img/hovedside.jpg" alt="Mockup av hovedside">
+      <p>Hovedsien skal være den første siden brukeren kommer til når han eller hun besøker siden. Som mockupen viser skal det være en navigasjonsbar på toppen som gjør det mulig for bruker å ta seg frem til alle andre sidene på nettsiden. Det er tross alt en nettside for en restaurant, så det viktigste er at brukeren finner det han eller hun leter etter. På forsiden skal det vises et par bilder av matretter for å gjøre siden mer estetisk appellerende. Footeren skal også vises på forsiden, selvfølgelig nederst og ute av syne på mockupen. (Mockup av footer finner du lenger ned)
+      </p>
+      <h3>Om oss:</h3>
+      <img src="img/hovedside.jpg" alt="Mockup av hovedside">
+      <p>
+      Denne siden skal, som alle andre sidene, skal dele den samme CSS-filen som forsiden. Målet med dette er å opprettholde den røde tråden når det gjelder estetikk. Her skal det være mulig å finne alt bruker trenger av informasjon om restauranten. Det skal være en liten tekst fra eieren av restauranten, samt et bilde, som sier litt om målet han har med restauranten, og hvorfor han åpnet den. Det vil være mulig å finne telefonnummer, e-mail, adresse og all annen nyttig informasjon på denne siden. Her vil det også være et større kartbilde av hvor restauranten befinner seg enn det er i footeren. Målet er at det skal være mulig å navigere seg til alle hjørner av nettsiden med ett klikk, og det er ikke noe annerledes med "Om oss"-siden.
       </p>
       <h3>Meny:</h3>
-      <p>Denne siden skal ha et eksempel på menyen til restauranten. Som vanlig vil denne vise de ulike rettene og eventuelt andre produkter som det er mulig å få kjøpt. Menyen skal ikke være et bilde, men være konstruert i HTML/CSS/JS.
+      <img src="img/hovedside.jpg" alt="Mockup av hovedside">
+      <p>
+      På "Meny"-siden skal det ikke være stort mer enn litt informasjon om menyen i form av en paragraf som befinner seg over selve menyen. Målet er at menyen selv skal være en godt representert meny som reflekterer visjonen til restauranten, uten alt for mye annet som ikke er innenfor temaet. Denne menyen skal ikke være et bilde, men skal være laget i HTML, CSS og JavaScript. På denne måten kan vi lage en visuelt appellerende meny som får eventuelle kunder til å ville reservere bord.
+      </p>
+      <h3>Bordreservasjon:</h3>
+      <img src="img/hovedside.jpg" alt="Mockup av hovedside">
+      <p>Målet med denne siden er at brukeren skal kunne reservere bord på en intuitiv og god måte. Det vi tenker her er at det skal være mulig å velge ulike parametre for reservering. Eksempler på dette er; antall mennesker, dato, klokkeslett osv. Forhåpentligvis skal dette fungere som en pop-up applikasjon som skal lages i JavaScript. Denne skal selvfølgelig ikke poppe opp når bruker kommer til nettsiden, men når bruker selv har klikket på "Klikk for å reservere bord"-knappen (Om labelen er akkurat dette er ikke sikkert). Før applikasjonen vises skal det stå litt om innstruksjoner og informasjon om bordreservasjonen.
+      </p>
+      <h3>Footer:</h3>
+      <img src="img/hovedside.jpg" alt="Mockup av hovedside">
+      <p>Footeren skal være den nederste delen på alle nettsider, akkurat som navbaren er den øverste. Her skal det stå en litt oppsummert informasjon om restauranten og siden. Det skal også være et lite bilde av lokasjonen til restauranten i form av google maps.
       </p>
     </div>
     <div class="par">

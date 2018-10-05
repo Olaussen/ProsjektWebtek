@@ -1,6 +1,6 @@
 
 body{
-  background-image: url('../img/sketch.png');
+  background-image: url('../img/bgburger2.jpg');
   background-repeat: repeat;
   font-family: verdana, Times, serif;
   text-align: center;
@@ -25,6 +25,24 @@ h1{
   font-size: 40px;
 }
 
+img{
+  border: 1px solid;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.par{
+  padding: 15px;
+  border: 10px solid transparent;
+  text-align: left;
+  width: 75ch;
+  margin: auto;
+}
+
+#filepath{
+
+}
+
 #wrapper{
   background-color: #fefefe;
   min-height: 100vh;
@@ -38,20 +56,6 @@ h1{
   border-radius: 15px;
 }
 
-.par{
-  padding: 15px;
-  border: 10px solid transparent;
-  text-align: left;
-  width: 75ch;
-  margin: auto;
-}
-
-li {
-  list-style-image: url('../img/burger-icon.svg');
-  line-height: 1.5em;
-  padding: 1.5em;
-  color: rgb(50,70,50);
-}
 
 #navbar li{
   display: inline;
@@ -74,15 +78,4 @@ li {
 
 #navbar:first-child{
   padding: 0;
-}
-
-#kravliste{
-  text-align: left;
-  max-width: 400px;
-  margin: auto;
-}
-
-#disclaimer{
-  text-align: center;
-  font-size: 15px;
 }
