@@ -79,3 +79,31 @@ img{
 #navbar:first-child{
   padding: 0;
 }
+
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  font-size:18px;
+  padding:24px;
+}
+
+tr {
+  color:#666B85;
+  font-size:14px;
+}
+
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  font-weight:300;
+  font-size:16px;;
+}
+
+table{
+  margin:auto;
+}
