@@ -1,0 +1,56 @@
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #cecece;
+  width: 100%;
+  margin: 0;
+}
+
+#wrapper{
+  width: 100%;
+}
+
+#menywrapper{
+  margin: auto;
+  width: 80%;
+  background-color: #f3f3f3;
+  border-radius: 5%;
+}
+#menywrapper h2{
+  text-align: center;
+}
+.foodtypeheader{
+  text-align: center;
+}
+.foodtypeheader h2{
+  text-decoration: underline;
+  padding-top: 3%;
+}
+
+.foodline{
+  text-align: center;
+}
+
+.foodline div{
+  display: inline-grid;
+  margin: 5%;
+  margin-top: 2%;
+}
+.foodline p:nth-child(n+2){
+  margin-top: 2%;
+}
+
+.foodline p:nth-child(3){
+  font-size: 0.6em;
+}
+
+#mainpicture{
+  width: 100%;
+  height: 30%;
+}
+
+#tempnavbar{
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
