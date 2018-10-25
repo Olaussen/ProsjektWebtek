@@ -1,7 +1,7 @@
 
 body{
   font-family: verdana,Arial, sans-serif;
-  background-color: #dedede;
+  background-color: #8b7765;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -16,14 +16,16 @@ hr{
 }
 
 #menywrapper{
-  margin: auto;
+  margin: 20px auto;
   width: 80%;
   background-color: #f4f4f4;
   border-radius: 5%;
+  border: 1px dashed;
 }
 #menywrapper h2{
   text-align: center;
 }
+
 .foodtypeheader h1{
   padding-top: 3%;
   color: #333;
@@ -46,10 +48,13 @@ hr{
 
 .foodtypeheader>p{
   border: 1px dashed darkgrey;
-  border-radius: 10%;
   padding: 2%;
   width: 60%;
   margin: 2% auto;
+}
+
+.foodtypeheader img{
+  width: 30%;
 }
 
 .foodpic{
@@ -70,6 +75,8 @@ hr{
   display: inline-grid;
   margin: 5%;
   margin-top: 2%;
+  border-radius: 5%;
+  background:		#FFF8DC;
 }
 .foodline p:nth-child(n+2){
   margin-top: 2%;
@@ -77,15 +84,11 @@ hr{
 
 .foodline p:nth-child(3){
   font-size: 0.6em;
+  padding-bottom: 5%;
 }
 
 #mainpicture{
   width: 100%;
-}
-#tempnavbar{
-  width: 100%;
-  height: 60px;
-  background-color: black;
 }
 #allergenliste{
   max-width: 70ch;
@@ -98,4 +101,11 @@ hr{
 }
 #allergenliste h4{
   margin: 1%;
+}
+
+#tempnavbar{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: black;
 }
