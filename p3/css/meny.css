@@ -1,7 +1,7 @@
 
 body{
   font-family: verdana,Arial, sans-serif;
-  background-color: #8b7765;
+  background-color: #f0f0f0;
   width: 100%;
   margin: 0;
   text-align: center;
@@ -19,7 +19,6 @@ hr{
   margin: 20px auto;
   width: 80%;
   background-color: #f4f4f4;
-  border-radius: 5%;
   border: 1px dashed;
 }
 #menywrapper h2{
@@ -44,6 +43,9 @@ hr{
   font-weight: 800;
   line-height: 1;
   text-shadow: #3d4D5D 2px 2px 0;
+}
+.foodtypeheader h3{
+  font-size: 1.5em;
 }
 
 .foodtypeheader>p{
@@ -76,7 +78,7 @@ hr{
   margin: 5%;
   margin-top: 2%;
   border-radius: 5%;
-  background:		#FFF8DC;
+  background:		#d8d8d8;
 }
 .foodline p:nth-child(n+2){
   margin-top: 2%;
@@ -102,7 +104,11 @@ hr{
 #allergenliste h4{
   margin: 1%;
 }
-
+#drikkekart div{
+  margin: 10%;
+  max-width: 30ch;
+  background:		#d8d8d8;
+}
 #tempnavbar{
   position: fixed;
   width: 100%;
