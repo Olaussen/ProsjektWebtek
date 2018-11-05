@@ -8,7 +8,22 @@
 </head>
 
 <body>
-  <div id="tempnavbar"></div>
+  <!-- Navbar -->
+  <div class="navbar_logo">
+    <img src="images/logo.png" alt="Picture of our logo" id="logo">
+
+  </div>
+  <div class="topnav" id="myTopnav">
+    <p id="placeholder"></p>
+    <a href="#om_oss" id="om_oss">Om oss</a>
+    <a href="meny.html" id="meny">Meny</a>
+    <a href="#reserver" id="reserver">Reserver</a>
+    <a href="#galleri" id="galleri">Galleri</a>
+    <a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()">
+      <img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon">
+    </a>
+  </div>
+  <!--- End of navbar-->
   <div id="wrapper">
     <img id="mainpicture" src="images/meny.jpg" alt="Main picture of the menu-site">
     <div id="menywrapper">
@@ -91,14 +106,16 @@
       <hr>
       <section class="foodtypeheader">
         <h2>Dessert</h2>
-        <p>Etter å ha spist seg god å mett på en av verdens beste burgere er det uklart om man har mer plass der nede. Om man skulle ha det så skal det ikke stå på kvaliteten av dessertene vi tilbyr. Under finner du et utvalg av hjemmelagde og smakfulle desserter som får deg til å glemme at du er mett. Prøv da vel.</p>
+        <p>Etter å ha spist seg god å mett på en av verdens beste burgere er det uklart om man har mer plass der nede. Om man skulle ha det så skal det ikke stå på kvaliteten av dessertene vi tilbyr. Under finner du et utvalg av hjemmelagde og
+          smakfulle desserter som får deg til å glemme at du er mett. Prøv da vel.</p>
         <img class="foodpic" src="images/dessert1.png" alt="Picture of dessert">
         <img class="foodpic" src="images/dessert2.jpg" alt="Picture of dessert">
       </section>
       <section class="foodline">
         <div class="dish">
           <h3>Sjokoladefondant</h3>
-          <p>Har du noengang drømt om å svømme i flytende sjokolade? Husets sjokoladefondant ser kanskje ut som en kake, men når du sette skjeen i den finner du fort ut at varm flytende sjokolade flyter utover tallerkenen. Denne delikatessen blir servert med husets vaniljeis og smaker rett og slett helt fantastisk <br>
+          <p>Har du noengang drømt om å svømme i flytende sjokolade? Husets sjokoladefondant ser kanskje ut som en kake, men når du sette skjeen i den finner du fort ut at varm flytende sjokolade flyter utover tallerkenen. Denne delikatessen blir
+            servert med husets vaniljeis og smaker rett og slett helt fantastisk <br>
             <i>- 79kr</i></p>
           <p>1, 2, 3, 5, 10</p>
         </div>
@@ -116,7 +133,8 @@
         </div>
         <div class="dish">
           <h3>Fireball glory</h3>
-          <p><b>20+</b><br> Smak på denne kanelhimmelen. Husets kanelbakverk bakt med fireball. Dette er noe du aldri kommer til å spise noen andre steder. Serveres med 2 kuler valgfri is ved siden av (sjokolade, vanilje, pistasj, jordbær), <b>OG</b> en shot (4cl) <i>Fireball</i><br>
+          <p><b>20+</b><br> Smak på denne kanelhimmelen. Husets kanelbakverk bakt med fireball. Dette er noe du aldri kommer til å spise noen andre steder. Serveres med 2 kuler valgfri is ved siden av (sjokolade, vanilje, pistasj, jordbær), <b>OG</b>
+            en shot (4cl) <i>Fireball</i><br>
             <i>- 159kr</i></p>
           <p>1, 2, 3, 4, 5, 10</p>
         </div>
@@ -126,7 +144,8 @@
       <hr>
       <section class="foodtypeheader">
         <h2>Drikkekart</h2>
-        <p>Man kan ikke spise fantastisk mat uten fantastisk drikke. The Fancy Pickle tilbyr et utvalg alkoholholdige og alkoholfrie drikker. Merk at skjenkeloven gjelder, og det vil derfor bli spurt etter legitimasjon hvis vi tror du er under <b>25 år</b> gammel. Om ikke annet står vil drikkene bli servert i halvliterglass (0.5l).</p>
+        <p>Man kan ikke spise fantastisk mat uten fantastisk drikke. The Fancy Pickle tilbyr et utvalg alkoholholdige og alkoholfrie drikker. Merk at skjenkeloven gjelder, og det vil derfor bli spurt etter legitimasjon hvis vi tror du er under <b>25
+            år</b> gammel. Om ikke annet står vil drikkene bli servert i halvliterglass (0.5l).</p>
         <div class="drikkekart">
           <h3>Alkoholfritt</h3>
           <div class="dish">
@@ -196,31 +215,33 @@
         <hr>
         <hr>
         <hr>
-      <section class="foodtypeheader">
-        <h2>Øvrig informasjon</h2>
-        <p>Om det er noe servitørene kan gjøre så er det bare å rope. De er her for å gjøre din opplevelse til den beste mulig. Det er bare å spørre etter egenkonstruering av retter, dog dette kan endre prisen. Det er anbefalt å velge en av de predefinerte rettene, ettersom råvarene og kombinasjonen av disse er valgt ut nøye for å gi akkurat <b>deg</b> den beste matopplevelsen Trondheim har å by på. </p>
-      </section>
-      <section id="allergenliste">
-        <h4>Allergenliste:</h4>
-        <ol>
-          <li>(1) Egg |</li>
-          <li>(2) Nøtter |</li>
-          <li>(3) Melk |</li>
-          <li>(4) Soya |</li>
-          <li>(5) Gluten |</li>
-          <li>(6) Skalldyr |</li>
-          <li>(7) Citrusfrukt |</li>
-          <li>(8) Peanøtter |</li>
-          <li>(9) Bygg |</li>
-          <li>(10) Hvete |</li>
-          <li>(11) Potetstivelse |</li>
-          <li>(12) Selleri |</li>
-          <li>(13) Sennep</li>
-        </ol>
-      </section>
-      <hr>
+        <section class="foodtypeheader">
+          <h2>Øvrig informasjon</h2>
+          <p>Om det er noe servitørene kan gjøre så er det bare å rope. De er her for å gjøre din opplevelse til den beste mulig. Det er bare å spørre etter egenkonstruering av retter, dog dette kan endre prisen. Det er anbefalt å velge en av de
+            predefinerte rettene, ettersom råvarene og kombinasjonen av disse er valgt ut nøye for å gi akkurat <b>deg</b> den beste matopplevelsen Trondheim har å by på. </p>
+        </section>
+        <section id="allergenliste">
+          <h4>Allergenliste:</h4>
+          <ol>
+            <li>(1) Egg |</li>
+            <li>(2) Nøtter |</li>
+            <li>(3) Melk |</li>
+            <li>(4) Soya |</li>
+            <li>(5) Gluten |</li>
+            <li>(6) Skalldyr |</li>
+            <li>(7) Citrusfrukt |</li>
+            <li>(8) Peanøtter |</li>
+            <li>(9) Bygg |</li>
+            <li>(10) Hvete |</li>
+            <li>(11) Potetstivelse |</li>
+            <li>(12) Selleri |</li>
+            <li>(13) Sennep</li>
+          </ol>
+        </section>
+        <hr>
     </div>
   </div>
+  <script src="scripts/script.js" charset="utf-8"></script>
 </body>
 
 </html>
