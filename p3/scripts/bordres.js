@@ -30,11 +30,9 @@ menuButton.onmouseover = function() {
  /* Open or close reservation form*/
  function openForm() {
   document.getElementById("myRes").style.display = "block";
-  document.getElementsByClassName("open-btn").style.display ="none";
 }
 function closeForm() {
   document.getElementById("myRes").style.display = "none";
-  document.getElementsByClassName("open-btn").style.display ="block";
 }
  /* Set min date to today*/
  var today = new Date();
