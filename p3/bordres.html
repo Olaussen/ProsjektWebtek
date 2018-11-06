@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="no" dir="ltr">
+ <html lang="no" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>TFP - Bordreservasjon</title>
@@ -9,21 +8,18 @@
   <body>
     <div class="navbar_logo">
       <img src="images/logo.png" alt="Picture of our logo" id="logo">
-
-    </div>
+     </div>
     <div class="topnav" id="myTopnav">
       <p id="placeholder"></p>
       <a href="#om_oss" id="om_oss">Om oss</a>
       <a href="meny.html" id="meny">Meny</a>
       <a href="bordres.html" id="reserver">Reserver</a>
-      <a href="galleri.html" id="galleri">Galleri</a>
+      <a href="#galleri" id="galleri">Galleri</a>
       <a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()">
         <img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon">
       </a>
-
-    </div>
-    <div id="reswrapper">
-      <img id="reshead" src="images/reshead.png" alt="Reservation header picture">
+     </div>
+    <img id="reshead" src="images/reshead.png" alt="Reservation header picture">
     <section class="reserverinfo">
       <div>
         <h2>Something</h2>
@@ -32,46 +28,33 @@
         </p>
         <p>Alt du trenger å gjøre er å trykke på "Reserver bord" knappen nede til høyre og fylle ut skjemaet.</p>
       </div>
+      <div id="temptext">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim culpa nostrum temporibus iure iusto sapiente libero cupiditate iste, perspiciatis assumenda dolore ratione quia doloribus earum veritatis autem perferendis laboriosam expedita sint voluptatum, dolor cumque! Cupiditate corrupti minima iure nesciunt, ab modi molestiae soluta eos cum, tempora laborum! Accusamus voluptates corporis voluptatibus tempore ipsam quisquam dolor fuga natus, ex rem nostrum. Expedita soluta sint porro maxime, aspernatur quidem, cum. Adipisci recusandae a totam incidunt provident, pariatur repellat? Iusto accusamus saepe suscipit ipsam nisi libero. Modi soluta temporibus provident, fuga, adipisci iure officia et accusantium nobis perferendis eligendi ex vero. Rem velit ut vel ad quaerat adipisci amet dicta tempore asperiores optio, doloribus tempora labore id repellendus nostrum sequi est blanditiis molestiae laudantium, ipsum unde accusamus, minus maiores. Quia ullam est hic labore nemo, neque placeat perspiciatis cupiditate dolore! Amet incidunt officia doloremque delectus iste aspernatur maiores dolor esse autem laudantium unde at, culpa deserunt vitae, itaque, alias, ipsam porro sequi quia vel repudiandae veniam laborum. Inventore maiores cumque, nemo reprehenderit saepe laboriosam! Vero mollitia unde quos quam itaque, in ad numquam, doloremque molestias saepe nobis pariatur ut earum iusto dignissimos qui facilis. Eveniet praesentium adipisci provident necessitatibus eos dignissimos officiis obcaecati autem earum? Reiciendis, architecto, accusantium nisi corporis voluptas qui atque veritatis asperiores labore consectetur. Optio porro cumque, vero fuga fugiat eaque laudantium beatae non aperiam aut atque nostrum saepe hic ad magni repellat, magnam, mollitia quasi? Possimus quis quisquam libero sapiente deserunt, voluptas, similique est nulla odio optio tempora maiores voluptatem soluta expedita ullam! Dolorum eaque quo laudantium aspernatur et dolorem, veniam doloremque molestiae, obcaecati iste atque perspiciatis, facilis praesentium, ab odit ipsum quidem eligendi ullam incidunt est minima dolores. Rerum quia, tempore temporibus nemo eius accusamus repellendus quasi vero, inventore atque enim reprehenderit doloribus est ex ut voluptas blanditiis nam voluptatibus. Iure, non fugit in nulla quae repellat ex placeat at eos expedita, cupiditate temporibus! Iure doloribus voluptas laudantium ipsum minima reiciendis ratione sequi necessitatibus, sapiente est, fugit dolore autem, animi, impedit iusto ducimus? Exercitationem recusandae ex cupiditate voluptate error dolores labore, molestiae nihil rerum ullam. Fugit sed beatae aperiam explicabo debitis mollitia nihil harum unde maiores. Aliquid est, officiis labore totam exercitationem fugit repellat laboriosam neque. Placeat, laudantium illum ipsum dolores ex iste consequatur est aut! Magnam beatae sapiente neque corporis perferendis. Eius, dolorum nostrum ratione dolore, laborum provident, consectetur enim quos, veritatis dicta ea rem recusandae suscipit!</p>
+      </div>
     </section>
     <button class="open-btn" onclick="openForm()">Reserver bord</button>
-
-    <div class="respopup" id="myRes">
+     <div class="respopup" id="myRes">
       <form class="myForm">
         <h2>Reservasjon</h2>
-
-        <label for="name"><b>Navn</b></label>
+         <label for="name"><b>Navn</b></label>
         <input type="text" placeholder="Ditt navn" name="name" required><br>
-
-        <label for="date"><b>Dato</b></label>
+         <label for="date"><b>Dato</b></label>
         <input id="dateinput" type="date" placeholder="Dato" name="date" value="" required min="" max=""><br>
-
-        <label for="time"><b>Tidspunkt</b></label>
+         <label for="time"><b>Tidspunkt</b></label>
         <input id="time" type="time" placeholder="Klokkeslett" name="time" value="" max="21:30" min="10:00" required><br>
-
-        <label for="amount"><b>Antall plasser</b></label>
+         <label for="amount"><b>Antall plasser</b></label>
         <input type="number" placeholder="Antall" name="amount" min="1" value="1" max="30" required><br>
-
-        <label for="phone"><b>Telefonnummer</b></label>
+         <label for="phone"><b>Telefonnummer</b></label>
         <input type="text" placeholder="+47 123 45 678" name="phone" required><br>
-
-        <label for="info"><b>Tilleggsinformasjon</b></label>
+         <label for="info"><b>Tilleggsinformasjon</b></label>
         <input type="text" placeholder="..." name="info"><br>
-
-
-        <button type="submit" class="btn">Reserver</button>
+         <button type="submit" class="btn">Reserver</button>
         <button type="submit" class="btn cancel" onclick="closeForm()">Avbryt</button>
-
-
-      </form>
-    </div>
-    <div id="texteksempel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ipsum, ex. Maiores debitis quaerat ut veniam voluptate temporibus laboriosam, corrupti magni! Possimus odit expedita, nobis. Esse voluptates illum culpa iste nesciunt aspernatur saepe, sint harum, cum, enim nisi veritatis ducimus. Tempore laboriosam corporis ea, nostrum et deleniti. Porro placeat molestiae dolores sit, adipisci laboriosam. Voluptas, delectus animi. Ipsa soluta tempore aliquam, recusandae facere dolorem labore eum quasi ullam, enim voluptatum deserunt sapiente nisi? Omnis aliquam ratione sapiente, quae non accusantium a? Quas cupiditate praesentium, inventore eum, dolores accusamus ad similique tempore, blanditiis ea laudantium quisquam quam soluta ducimus temporibus commodi fugit ullam quo. Qui eaque provident dignissimos optio placeat explicabo, voluptates iusto voluptas modi porro? Similique ex sed, recusandae, quo accusamus totam! Necessitatibus iure, maxime eius voluptates libero amet architecto rerum, provident, velit perferendis magni nobis quis autem illum doloribus optio! Laudantium dignissimos quam quisquam omnis, ipsum laboriosam tempora, eos incidunt. Amet mollitia natus incidunt fugit aliquid minus doloremque cum, eos quasi quidem odit molestiae porro sunt similique explicabo quisquam, sapiente eius repellendus quo libero atque iusto commodi corrupti temporibus. Nihil dolorem, odit laboriosam inventore, praesentium ducimus at dolores iste soluta harum libero culpa. Dicta quo quasi, quis quos in.
-      </p>
-    </div>
+       </form>
     </div>
     <!-- Footer -->
     <div class="footer">
-      <a href="#reswrapper" id="backToTop">Tilbake til toppen</a>
+      <a href="#wrapper" id="backToTop">Tilbake til toppen</a>
       <div id="btmInfo">
         <span id="genInfo">The Fancy Pickle, Picklestreet 19, 7042 Trondheim</span>
         <span id="tlfInfo">Tlf: 98765432</span>
@@ -80,7 +63,6 @@
       <p id="jobbInfo">Har du lyst på en jobb hos The Fancy Pickle? Vi er alltid interesserte i gode folk med som verdsetter service!
       Send oss en søknad med CV og et bilde av deg selv til jobb@tfp.no, eller så kan du sjekke om NAV har noen ledige stillinger <a href="https://tjenester.nav.no/stillinger/stillinger?q=the+fancy+pickle" target="_blank">HER</a></p>
   </div>
-
-    <script src="scripts/bordres.js" charset="utf-8"></script>
+     <script src="scripts/bordres.js" charset="utf-8"></script>
   </body>
 </html>

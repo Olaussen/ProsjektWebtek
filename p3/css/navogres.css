@@ -7,16 +7,11 @@ body {
   text-align: center;
   color: black;
 }
-
-#reswrapper {
-  margin-top: 125px;
+#temptext{
+  width: 20%;
+  margin: 20px auto 20px auto;
 }
-
 /* ------------------------- NAVBAR -------------------------*/
-#teksteksempel {
-  width: 100px;
-}
-
 .navbar_logo {
   position: fixed;
   top: 0;
@@ -57,8 +52,7 @@ body {
   margin-right: 60px;
   margin-left: 60px;
 }
-
-.topnav a:last-child {
+.topnav a:last-child{
   padding: 7px 8px;
 }
 
@@ -132,21 +126,16 @@ body {
     }
   }
 }
-
 /*---------------------END NAVBAR */
-/* Bordreservasjon */
-#reshead {
-  width: 100%;
+ /* Bordreservasjon */
+ #reshead {
+  width:100%;
   border: 0;
   margin-top: -5px;
   padding: 0;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-.open-btn {
+ * {box-sizing: border-box;}
+ .open-btn {
   border-radius: 4px;
   background-color: #555;
   color: white;
@@ -156,11 +145,10 @@ body {
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
-  right: 28px;
+  right:28px;
   width: 280px;
 }
-
-.respopup {
+ .respopup {
   display: none;
   position: fixed;
   bottom: 0;
@@ -168,61 +156,55 @@ body {
   border: 3px solid #f1f1f1;
   z-index: 9;
 }
-
-.myForm {
+ .myForm {
   border-radius: 4px;
   width: 400px;
   height: 400px;
   padding: 10px;
   background-color: white;
   margin: 0;
-}
-
-.myForm label {
+ }
+.myForm label{
   float: left;
 }
-
-.myForm input {
-  width: 100%;
+ .myForm input{
+  width: 100%
   padding: 15px;
   margin: 0px 10px 22px 10px;
   border: none;
   background: #f1f1f1;
   right: 20px;
-  position: fixed;
+  position:fixed;
 }
-
-.myForm input[type=text]:focus {
+ .myForm input[type=text]:focus{
   background-color: #ddd;
   outline: none;
 }
-
-.myForm .btn {
+ .myForm .btn {
   border-radius: 4px;
   background-color: #003005;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 100%
   margin-bottom: 10px;
   opacity: 0.8;
-  position: fixed;
+  position:fixed;
   bottom: 23px;
   right: 128px;
 }
-
-.myForm .cancel {
+ .myForm .cancel {
   border-radius: 4px;
   background-color: red;
   position: fixed;
   bottom: 23px;
   right: 38px;
 }
-
-.myForm .btn:hover, .open-btn:hover {
+.myForm .btn:hover, .open-btn:hover{
   opacity: 1;
 }
+
 /* ---------- FOOTER ---------- */
 .footer {
   position: absolute;
