@@ -70,7 +70,6 @@ body{
   filter: grayscale(0%);
   transform: scale(1.2);
   cursor: pointer;
-  margin: 5px;
 }
 
 #slider{

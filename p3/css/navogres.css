@@ -7,8 +7,26 @@ body {
   color: black;
 }
 
+#reswrapper {
+  margin-top: 125px;
+}
+
+/* ------------------------- NAVBAR -------------------------*/
+#teksteksempel {
+  width: 100px;
+}
+
+.navbar_logo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /*Styling of the parent (navbar itself)*/
 .topnav {
+  position: fixed;
+  top: 73px;
+  left: 0;
   background-color: black;
   width: 100%;
   overflow: hidden;
@@ -18,24 +36,19 @@ body {
 
 .navbar_logo {
   background-color: black;
-  color: inherit;
+  color: #fefefe;
 }
 
 #logo {
   margin-top: 10px;
-  width: 275px;
-}
-
-#eks {
-  margin: 20px auto 0 auto;
-  width: 10%;
+  height: 60px;
 }
 
 /*Styling of the links in the navbar*/
 .topnav a {
   display: inline-block;
   color: #f2f2f2;
-  background-color: inherit;
+  background-color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -44,10 +57,15 @@ body {
   margin-left: 60px;
 }
 
+.topnav a:last-child {
+  padding: 7px 8px;
+}
+
 /*Placeholder. Creates blank padding matching the links. It's for the responsive menu*/
 .topnav p {
   display: none;
-  padding: 14px 16px;
+  height: 52px;
+  margin: 0;
 }
 
 /*Hovering over links changes color*/
@@ -61,7 +79,7 @@ body {
   display: none;
 }
 
-/* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu*/
+/* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu-icon*/
 @media screen and (max-width: 925px) {
   .topnav a {
     display: none;
@@ -83,7 +101,7 @@ body {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 925px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
 
   .topnav.responsive a.icon {
@@ -94,7 +112,8 @@ body {
 
   @media screen and (max-width: 925px) {
     .topnav {
-      position: relative;
+      position: fixed;
+      top: 73px;
     }
 
     .topnav a.icon {
@@ -113,16 +132,18 @@ body {
   }
 }
 
+/*---------------------END NAVBAR */
 /* Bordreservasjon */
-
 #reshead {
-  width:100%;
+  width: 100%;
   border: 0;
   margin-top: -5px;
   padding: 0;
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 .open-btn {
   border-radius: 4px;
@@ -134,7 +155,7 @@ body {
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
-  right:28px;
+  right: 28px;
   width: 280px;
 }
 
@@ -154,23 +175,23 @@ body {
   padding: 10px;
   background-color: white;
   margin: 0;
-
 }
-.myForm label{
+
+.myForm label {
   float: left;
 }
 
-.myForm input{
-  width: 100%
+.myForm input {
+  width: 100%;
   padding: 15px;
   margin: 0px 10px 22px 10px;
   border: none;
   background: #f1f1f1;
   right: 20px;
-  position:fixed;
+  position: fixed;
 }
 
-.myForm input[type=text]:focus{
+.myForm input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -182,10 +203,10 @@ body {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%
+  width: 100%;
   margin-bottom: 10px;
   opacity: 0.8;
-  position:fixed;
+  position: fixed;
   bottom: 23px;
   right: 128px;
 }
@@ -197,6 +218,7 @@ body {
   bottom: 23px;
   right: 38px;
 }
-.myForm .btn:hover, .open-btn:hover{
+
+.myForm .btn:hover, .open-btn:hover {
   opacity: 1;
 }
