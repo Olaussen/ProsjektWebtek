@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Galleri </title>
+  <link rel="stylesheet" type="text/css" href="css/style_galleri.css">
+</head>
+<body>
+    <div id="tempnavbar"></div>
+
+    <div id="topp">
+    <img id="hovedbilde" src="images/hovedbilde.jpg" alt="Hovedbilde til siden">
+    <h1> Galleri </h1>
+  </div>
+
+  <section class="bildeGalleri2">
+    <h1 id="show">SlideShow</h1>
+    <div id="slider">
+      <div id="box">
+        <img src="images/1.jpg" alt="burger">
+      </div>
+      <button class="prew" onclick="prevImage()">❮</button>
+      <button class="next" onclick="nextImage()">❯</button>
+    </div>
+</section>
+
+<section class="bildeGalleri">
+  <div class="Galleri">
+  <a href="#show">
+  <img src="images/1.jpg" alt="Burger" onclick="thisImage(1)">
+  <img src="images/2.jpg" alt="Burger" onclick="thisImage(2)">
+  <img src="images/3.jpg" alt="Burger" onclick="thisImage(3)">
+  <img src="images/4.jpg" alt="Burger" onclick="thisImage(4)">
+  <img src="images/5.jpg" alt="Dessert" onclick="thisImage(5)">
+  <img src="images/6.jpg" alt="Dessert"  onclick="thisImage(6)">
+</a>
+  </div>
+</section>
+
+  <script src="scripts/script_galleri.js"></script>
+</body>

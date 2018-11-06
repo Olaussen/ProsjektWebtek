@@ -1,5 +1,5 @@
 var slider_content = document.getElementById("box");
-var image = ["1","2","3","4","5","6"];
+var image = ["images/1","images/2","images/3","images/4","images/5","images/6"];
 
 var i = image.length;
 var lol = setInterval(nextImage ,3000);
