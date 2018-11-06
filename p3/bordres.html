@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TFP - Bordreservasjon</title>
+    <link rel="stylesheet" href="css/navogres.css">
+  </head>
+  <body>
+    <div class="navbar_logo">
+      <img src="images/logo.png" alt="Picture of our logo" id="logo">
+
+    </div>
+    <div class="topnav" id="myTopnav">
+      <p id="placeholder"></p>
+      <a href="#om_oss" id="om_oss">Om oss</a>
+      <a href="meny.html" id="meny">Meny</a>
+      <a href="bordres.html" id="reserver">Reserver</a>
+      <a href="#galleri" id="galleri">Galleri</a>
+      <a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()">
+        <img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon">
+      </a>
+
+    </div>
+    <img id="reshead" src="images/reshead.png" alt="Reservation header picture">
+    <section class="reserverinfo">
+      <div>
+        <h2>Something</h2>
+        <p>
+          Vi tilbyr reservering av bord hos The Fancy Pickle.
+        </p>
+        <p>Alt du trenger å gjøre er å trykke på "Reserver bord" knappen nede til høyre og fylle ut skjemaet.</p>
+      </div>
+    </section>
+    <button class="open-btn" onclick="openForm()">Reserver bord</button>
+
+    <div class="respopup" id="myRes">
+      <form class="myForm">
+        <h2>Reservasjon</h2>
+
+        <label for="name"><b>Navn</b></label>
+        <input type="text" placeholder="Ditt navn" name="name" required><br>
+
+        <label for="date"><b>Dato</b></label>
+        <input id="dateinput" type="date" placeholder="Dato" name="date" value="" required min="" max=""><br>
+
+        <label for="time"><b>Tidspunkt</b></label>
+        <input id="time" type="time" placeholder="Klokkeslett" name="time" value="" max="21:30" min="10:00" required><br>
+
+        <label for="amount"><b>Antall plasser</b></label>
+        <input type="number" placeholder="Antall" name="amount" min="1" value="1" max="30" required><br>
+
+        <label for="phone"><b>Telefonnummer</b></label>
+        <input type="text" placeholder="+47 123 45 678" name="phone" required><br>
+
+        <label for="info"><b>Tilleggsinformasjon</b></label>
+        <input type="text" placeholder="..." name="info"><br>
+
+
+        <button type="submit" class="btn">Reserver</button>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Avbryt</button>
+
+
+      </form>
+    </div>
+
+    <script src="scripts/bordres.js" charset="utf-8"></script>
+  </body>
+</html>

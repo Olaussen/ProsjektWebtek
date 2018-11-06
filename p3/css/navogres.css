@@ -1,0 +1,202 @@
+body {
+  font-family: verdana, Arial, sans-serif;
+  background-color: #f0f0f0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+
+/*Styling of the parent (navbar itself)*/
+.topnav {
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+  color: #fefefe;
+  display: inline-block;
+}
+
+.navbar_logo {
+  background-color: black;
+  color: inherit;
+}
+
+#logo {
+  margin-top: 10px;
+  width: 275px;
+}
+
+#eks {
+  margin: 20px auto 0 auto;
+  width: 10%;
+}
+
+/*Styling of the links in the navbar*/
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  background-color: inherit;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+/*Placeholder. Creates blank padding matching the links. It's for the responsive menu*/
+.topnav p {
+  display: none;
+  padding: 14px 16px;
+}
+
+/*Hovering over links changes color*/
+.topnav a:hover {
+  background-color: #fefefe;
+  color: black;
+}
+
+/*Hides icon*/
+.topnav .icon {
+  display: none;
+}
+
+/* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu*/
+@media screen and (max-width: 925px) {
+  .topnav a {
+    display: none;
+  }
+
+  .topnav p {
+    display: block;
+  }
+
+  .topnav a.icon {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 925px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  @media screen and (max-width: 925px) {
+    .topnav {
+      position: relative;
+    }
+
+    .topnav a.icon {
+      position: absolute;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    .topnav.responsive p {
+      display: none;
+    }
+  }
+}
+
+/* Bordreservasjon */
+
+#reshead {
+  width:100%;
+  border: 0;
+  margin-top: -5px;
+  padding: 0;
+}
+
+* {box-sizing: border-box;}
+
+.open-btn {
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right:28px;
+  width: 280px;
+}
+
+.respopup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.myForm {
+  border-radius: 4px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+
+}
+.myForm label{
+  float: left;
+}
+
+.myForm input{
+  width: 100%
+  padding: 15px;
+  margin: 0px 10px 22px 10px;
+  border: none;
+  background: #f1f1f1;
+  right: 20px;
+  position:fixed;
+}
+
+.myForm input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.myForm .btn {
+  border-radius: 4px;
+  background-color: #003005;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%
+  margin-bottom: 10px;
+  opacity: 0.8;
+  position:fixed;
+  bottom: 23px;
+  right: 128px;
+}
+
+.myForm .cancel {
+  border-radius: 4px;
+  background-color: red;
+  position: fixed;
+  bottom: 23px;
+  right: 38px;
+}
+.myForm .btn:hover, .open-btn:hover{
+  opacity: 1;
+}
