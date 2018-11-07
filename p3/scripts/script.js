@@ -5,11 +5,16 @@ let about = ['Om oss','About'];
 let menu = ['Meny','Menu'];
 let reservation = ['Reserver','Reservation'];
 let gallery = ['Galleri','Gallery'];
-i = 0; //ENDRER SPRÅK HER
+let about_link = ['about.html','about_eng.html'];
+let meny_link = ['meny.html','meny_eng.html'];
+let bordres_link = ['bordres.html','bordres_eng.html'];
+let galleri_link = ['galleri.html','galleri_eng.html'];
+i=0;
+
 //Funksjon som skriver inn html-kode for navbaren
 function createNavbar() {
     document.open("text/html", "replace");
-    document.write('<div class="navbar_logo"><img src="images/logo.png" alt="Picture of our logo" id="logo"></div><div class="topnav" id="myTopnav"><p id="placeholder"></p><a href="about.html" id="om_oss">'+about[i]+'</a><a href="meny.html" id="meny">'+menu[i]+'</a><a href="bordres.html" id="reserver">'+reservation[i]+'</a><a href="galleri.html" id="galleri">'+gallery[i]+'</a><a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()"><img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon"></a></div>');
+    document.write('<div class="navbar_logo"><img src="images/logo.png" alt="Picture of our logo" id="logo"></div><div class="topnav" id="myTopnav"><p id="placeholder"></p><a href='+about_link[i]+' id="om_oss">'+about[i]+'</a><a href='+meny_link[i]+' id="meny">'+menu[i]+'</a><a href='+bordres_link[i]+' id="reserver">'+reservation[i]+'</a><a href='+galleri_link[i]+' id="galleri">'+gallery[i]+'</a><a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()"><img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon"></a></div>');
     document.close();
 }
 createNavbar();
