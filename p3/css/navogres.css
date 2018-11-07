@@ -1,3 +1,4 @@
+html{scroll-behavior:smooth}
 body {
   font-family: verdana, Arial, sans-serif;
   background-color: #f0f0f0;
@@ -6,9 +7,22 @@ body {
   text-align: center;
   color: black;
 }
+#temptext{
+  width: 20%;
+  margin: 20px auto 20px auto;
+}
+/* ------------------------- NAVBAR -------------------------*/
+.navbar_logo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /*Styling of the parent (navbar itself)*/
 .topnav {
+  position: fixed;
+  top: 73px;
+  left: 0;
   background-color: black;
   width: 100%;
   overflow: hidden;
@@ -18,24 +32,19 @@ body {
 
 .navbar_logo {
   background-color: black;
-  color: inherit;
+  color: #fefefe;
 }
 
 #logo {
   margin-top: 10px;
-  width: 275px;
-}
-
-#eks {
-  margin: 20px auto 0 auto;
-  width: 10%;
+  height: 60px;
 }
 
 /*Styling of the links in the navbar*/
 .topnav a {
   display: inline-block;
   color: #f2f2f2;
-  background-color: inherit;
+  background-color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -43,11 +52,15 @@ body {
   margin-right: 60px;
   margin-left: 60px;
 }
+.topnav a:last-child{
+  padding: 7px 8px;
+}
 
 /*Placeholder. Creates blank padding matching the links. It's for the responsive menu*/
 .topnav p {
   display: none;
-  padding: 14px 16px;
+  height: 52px;
+  margin: 0;
 }
 
 /*Hovering over links changes color*/
@@ -61,7 +74,7 @@ body {
   display: none;
 }
 
-/* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu*/
+/* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu-icon*/
 @media screen and (max-width: 925px) {
   .topnav a {
     display: none;
@@ -83,7 +96,7 @@ body {
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 925px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
   }
 
   .topnav.responsive a.icon {
@@ -94,7 +107,8 @@ body {
 
   @media screen and (max-width: 925px) {
     .topnav {
-      position: relative;
+      position: fixed;
+      top: 73px;
     }
 
     .topnav a.icon {
@@ -112,19 +126,17 @@ body {
     }
   }
 }
-
-/* Bordreservasjon */
-
-#reshead {
+/*---------------------END NAVBAR */
+ /* Bordreservasjon */
+ #reshead {
   width:100%;
   border: 0;
-  margin-top: -5px;
+  margin-top: 120px;
   padding: 0;
 }
+ * {box-sizing: border-box;}
 
-* {box-sizing: border-box;}
-
-.open-btn {
+ .open-btn {
   border-radius: 4px;
   background-color: #555;
   color: white;
@@ -134,33 +146,30 @@ body {
   opacity: 0.8;
   position: fixed;
   bottom: 23px;
-  right:28px;
+  right: 23px;
   width: 280px;
 }
-
-.respopup {
+ .respopup {
   display: none;
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: none;
   z-index: 9;
 }
-
-.myForm {
+ .myForm {
   border-radius: 4px;
+  border: none;
   width: 400px;
   height: 400px;
   padding: 10px;
   background-color: white;
   margin: 0;
-
-}
+ }
 .myForm label{
   float: left;
 }
-
-.myForm input{
+ .myForm input{
   width: 100%
   padding: 15px;
   margin: 0px 10px 22px 10px;
@@ -169,13 +178,11 @@ body {
   right: 20px;
   position:fixed;
 }
-
-.myForm input[type=text]:focus{
+ .myForm input[type=text]:focus{
   background-color: #ddd;
   outline: none;
 }
-
-.myForm .btn {
+ .myForm .btn {
   border-radius: 4px;
   background-color: #003005;
   color: white;
@@ -189,8 +196,7 @@ body {
   bottom: 23px;
   right: 128px;
 }
-
-.myForm .cancel {
+ .myForm .cancel {
   border-radius: 4px;
   background-color: red;
   position: fixed;
@@ -199,4 +205,45 @@ body {
 }
 .myForm .btn:hover, .open-btn:hover{
   opacity: 1;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  position: absolute;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+  height: 200px;
+  right: 0;
+  left: 0;
+  font-family: GT-Pressura-Light;
+}
+#btmInfo{
+  margin: 20px auto 20px auto;
+  width: 80%;
+  color: #d1d1d1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:visited{
+  color: inherit;
+  text-decoration: none;
+}
+.footer a:link{
+  color: inherit;
+  text-decoration: none;
+}
+#backToTop{
+  color: #d1d1d1;
+}
+.footer a:active{
+  color: inherit;
+  text-decoration: none;
+}
+#jobbInfo{
+  color: #8c8c8c;
 }

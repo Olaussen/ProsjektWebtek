@@ -7,143 +7,112 @@ body{
   text-align: center;
 }
 
-hr{
+#hovedbilde{
+  position:relative;
+  width: 100%;
+  height:auto;
+}
+
+#slideShow{
+  margin:0;
+  padding: 0;
+}
+#numbertext{
+  background: lightgrey;
+  opacity: 0.5;
+  bottom:1%;
+  border: none;
+  text-align: center;
+  cursor:default;
+}
+
+#numbertext:hover{
+  opacity:1;
+}
+
+#topp h1{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: 0;
+    color: white;
+    font-size: 50px;
+  }
+
+  hr{
   height: 30px;
    border-style: solid;
    border-color: black;
    border-width: 1px 0 0 0;
    border-radius: 20px;
 }
-h1{
-  padding-top: 3%;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: 800;
-  line-height: 1;
-  text-shadow: #3d4D5D 2px 2px 0;
-}
-h3{
-  color: #333;
-  text-transform: uppercase;
-  font-size: 1.7em;
-  font-weight: 800;
-  line-height: 1;
-  text-shadow: #3d4D5D 2px 2px
-}
-/*Margin top sååass stor for å gjøre plass til navbar*/
-#wrapper {
-  margin-top: 125px;
+
+.Galleri img{
+  width: 300px;
+  padding: 25px;
+  filter: grayscale(100%);
+  transition: 1s;
+  object-fit: scale-down;
 }
 
-#menywrapper{
-  margin: 20px auto;
-  width: 80%;
-  background-color: #f4f4f4;
-  border: 1px dashed;
-}
-#menywrapper h2{
-  text-align: center;
+
+.Galleri img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
-#visjon{
-  margin: 20px auto;
-  width: 65%;
-  background-color: #f4f4f4;
-}
-#ceopic img{
-  width: 250px;
-  height: 175px;
-  border: 1px solid;
-  margin: 1%;
-}
-#ceopic figcaption{
-  font-size: 70%;
-}
-
-.foodtypeheader h2{
-  padding-top: 3%;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 800;
-  line-height: 1;
-  text-shadow: #3d4D5D 2px 2px 0;
-}
-.foodtypeheader h3{
-  font-size: 1.5em;
-}
-
-.foodtypeheader>p{
-  border: 1px dashed darkgrey;
-  padding: 2%;
-  width: 60%;
-  margin: 2% auto;
-}
-
-.foodtypeheader img{
-  width: 30%;
-}
-
-.foodpic{
-  padding: 2%;
-  border: 3px solid;
-  border-radius: 5%;
-}
-
-.foodline h3{
-  margin-bottom: 0;
-}
-.foodline p{
-  max-width: 30ch;
-  margin:auto;
-}
-
-.foodline div{
-  display: inline-grid;
-  margin: 5%;
-  margin-top: 2%;
-  border-radius: 5%;
-  background:		#d8d8d8;
-}
-.foodline p:nth-child(n+2){
-  margin-top: 2%;
-}
-
-.foodline p:nth-child(3){
-  font-size: 0.6em;
-  padding-bottom: 5%;
-}
-
-#mainpicture{
-  width: 100%;
-
-}
-#allergenliste{
-  max-width: 70ch;
-  margin: auto;
-}
-
-#allergenliste li{
-  font-size: 12px;
-  display: inline;
-}
-#allergenliste h4{
-  margin: 1%;
-}
-#drikkekart div{
-  margin: 10%;
-  max-width: 30ch;
-  background:		#d8d8d8;
-}
-#tempnavbar{
-  position: fixed;
-  width: 100%;
-  height: 60px;
+#slider{
+  width: 640px;
+  height: auto;
+  margin: 50px auto;
+  position: relative;
+  border: 10px solid black;
+  box-shadow: 0px 0px 5px 2px darkgrey;
   background-color: black;
 }
 
+#slider img{
+  width: 100%;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+}
+button{
+  padding: 15px;
+  border: none;
+  background: lightgrey;
+  border: solid darkgrey;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0.5;
+
+}
+button:hover{
+  transform:scale(1.2);
+  opacity: 1;
+  background: #37f;
+  border: solid black;
+}
+
+.next{
+  right: 0;
+}
+.prew{
+  left: 0;
+}
+#galleriWrapper{
+  margin-top: 125px;
+}
 /* ------------------------- NAVBAR -------------------------*/
+#navWrapper{
+  z-index: 3;
+  position: fixed;
+}
 .navbar_logo {
   position: fixed;
   top: 0;

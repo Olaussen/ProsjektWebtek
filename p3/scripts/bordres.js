@@ -5,6 +5,7 @@ const menuButton = document.getElementById('menu_link');
 const img = document.getElementById('menu_icon');
 
 
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function setIcon() {
   var x = document.getElementById("myTopnav");
@@ -26,20 +27,14 @@ menuButton.onmouseover = function() {
 
 
 //----------------------------
-
-/* Open or close reservation form*/
-
-function openForm() {
+ /* Open or close reservation form*/
+ function openForm() {
   document.getElementById("myRes").style.display = "block";
-  document.getElementsByClassName("open-btn").style.display ="none";
 }
 function closeForm() {
   document.getElementById("myRes").style.display = "none";
-  document.getElementsByClassName("open-btn").style.display ="block";
 }
-
-/* Set min date to today*/
-
+ /* Set min date to today*/
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1;
@@ -56,10 +51,8 @@ var max = maxy + "-" + mm + "-" + dd;
 document.getElementById("dateinput").setAttribute("min", today);
 document.getElementById("dateinput").setAttribute("value", today);
 document.getElementById("dateinput").setAttribute("max", max);
-
-/* Set time */
-
-var now = new Date();
+ /* Set time */
+ var now = new Date();
 var hrs = now.getHours();
 var min = now.getMinutes();
   if (hrs < 10) {
