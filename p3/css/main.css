@@ -270,6 +270,88 @@ h2{
   }
 }
 /*---------------------END NAVBAR */
+
+/*--------- Bordreservasjon ----------*/
+#reshead {
+ width:100%;
+ border: 0;
+ padding: 0;
+}
+* {box-sizing: border-box;}
+
+.open-btn {
+ border-radius: 4px;
+ background-color: #555;
+ color: white;
+ padding: 16px 20px;
+ border: none;
+ cursor: pointer;
+ opacity: 0.8;
+ position: fixed;
+ bottom: 23px;
+ right: 23px;
+ width: 280px;
+}
+.contentwrapper{
+ margin: 20px auto;
+ width: 80%;
+ background-color: #f4f4f4;
+}
+.respopup {
+ display: none;
+ position: fixed;
+ bottom: 0;
+ right: 15px;
+ border: none;
+ z-index: 9;
+}
+.myForm {
+ border-radius: 4px;
+ border: none;
+ width: 400px;
+ height: 400px;
+ padding: 10px;
+ background-color: white;
+ margin: 0;
+}
+.myForm label{
+ float: left;
+}
+.myForm input{
+ margin: 0px 10px 22px 10px;
+ border: none;
+ background: #f1f1f1;
+ right: 20px;
+ position:fixed;
+}
+.myForm input[type=text]:focus{
+ background-color: #ddd;
+ outline: none;
+}
+.myForm .btn {
+ border-radius: 4px;
+ background-color: #003005;
+ color: white;
+ padding: 16px 20px;
+ border: none;
+ cursor: pointer;
+ margin-bottom: 10px;
+ opacity: 0.8;
+ position:fixed;
+ bottom: 23px;
+ right: 128px;
+}
+.myForm .cancel {
+ border-radius: 4px;
+ background-color: red;
+ position: fixed;
+ bottom: 23px;
+ right: 38px;
+}
+.myForm .btn:hover, .open-btn:hover{
+ opacity: 1;
+}
+
 /* ---------- FOOTER ---------- */
 .footer {
   position: absolute;
@@ -309,4 +391,19 @@ h2{
 }
 #jobbInfo{
   color: #8c8c8c;
+}
+
+/*--------Language css ---------*/
+
+#noflag{
+  height: 30px;
+  position: fixed;
+  top: 21px;
+  left: 20px;
+}
+#usflag{
+  height: 30px;
+  position: fixed;
+  top: 21px;
+  left: 70px;
 }
