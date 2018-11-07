@@ -31,10 +31,18 @@ h3{
   line-height: 1;
   text-shadow: #3d4D5D 2px 2px
 }
+h2{
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: #3d4D5D 2px 2px
+}
 /*Margin top sååass stor for å gjøre plass til navbar*/
 #wrapper {
   margin-top: 125px;
 }
+
 
 #menywrapper{
   margin: 20px auto;
@@ -44,6 +52,10 @@ h3{
 }
 #menywrapper h2{
   text-align: center;
+}
+
+#aboutuspic{
+  width: 100%;
 }
 
 #visjon{
