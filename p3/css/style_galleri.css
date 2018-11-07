@@ -6,6 +6,11 @@ body{
   margin: 0;
   text-align: center;
 }
+.contentwrapper{
+  margin: 20px auto;
+  width: 80%;
+  background-color: #f4f4f4;
+}
 
 #hovedbilde{
   position:relative;
@@ -29,16 +34,6 @@ body{
 #numbertext:hover{
   opacity:1;
 }
-
-#topp h1{
-    z-index: 2;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    margin-top: 0;
-    color: white;
-    font-size: 50px;
-  }
 
   hr{
   height: 30px;

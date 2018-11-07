@@ -131,7 +131,6 @@ body {
  #reshead {
   width:100%;
   border: 0;
-  margin-top: 120px;
   padding: 0;
 }
  * {box-sizing: border-box;}
@@ -148,6 +147,11 @@ body {
   bottom: 23px;
   right: 23px;
   width: 280px;
+}
+.contentwrapper{
+  margin: 20px auto;
+  width: 80%;
+  background-color: #f4f4f4;
 }
  .respopup {
   display: none;
@@ -170,8 +174,6 @@ body {
   float: left;
 }
  .myForm input{
-  width: 100%
-  padding: 15px;
   margin: 0px 10px 22px 10px;
   border: none;
   background: #f1f1f1;
@@ -189,7 +191,6 @@ body {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%
   margin-bottom: 10px;
   opacity: 0.8;
   position:fixed;

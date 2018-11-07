@@ -44,13 +44,13 @@ h2{
 }
 
 
-#menywrapper{
+
+.contentwrapper{
   margin: 20px auto;
   width: 80%;
   background-color: #f4f4f4;
-  border: 1px dashed;
 }
-#menywrapper h2{
+.contentwrapper h2{
   text-align: center;
 }
 
@@ -87,7 +87,6 @@ h2{
 }
 
 .foodtypeheader>p{
-  border: 1px dashed darkgrey;
   padding: 2%;
   width: 60%;
   margin: 2% auto;

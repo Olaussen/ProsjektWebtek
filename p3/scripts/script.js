@@ -3,6 +3,7 @@ const logo = document.getElementById('logo');
 const site = window.location.href;
 const menuButton = document.getElementById('menu_link');
 const img = document.getElementById('menu_icon');
+document.getElementById("resContent").style.minHeight = "500px";
 
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
