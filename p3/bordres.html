@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>TFP - Bordreservasjon</title>
-    <link rel="stylesheet" href="css/navogres.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -27,7 +26,7 @@
          <label for="dateinput"><b>Dato</b></label>
         <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
          <label for="time"><b>Tidspunkt</b></label>
-        <input id="time" type="time" name="time" value="" max="21:30" min="10:00" required><br>
+        <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
          <label for="amount"><b>Antall plasser</b></label>
         <input id="amount" type="number" placeholder="Antall" name="amount" min="1" value="1" max="30" required><br>
          <label for="phone"><b>Telefonnummer</b></label>
@@ -39,5 +38,6 @@
        </form>
     </div>
      <script src="scripts/bordres.js"></script>
+     <button class="open-btn" onclick="openForm()">Reserver bord</button>
   </body>
 </html>
