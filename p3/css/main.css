@@ -14,6 +14,23 @@ hr{
    border-width: 1px 0 0 0;
    border-radius: 20px;
 }
+h1{
+  padding-top: 3%;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: #3d4D5D 2px 2px 0;
+}
+h3{
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: #3d4D5D 2px 2px
+}
 /*Margin top sååass stor for å gjøre plass til navbar*/
 #wrapper {
   margin-top: 125px;
@@ -29,14 +46,19 @@ hr{
   text-align: center;
 }
 
-.foodtypeheader h1{
-  padding-top: 3%;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 3em;
-  font-weight: 800;
-  line-height: 1;
-  text-shadow: #3d4D5D 2px 2px 0;
+#visjon{
+  margin: 20px auto;
+  width: 65%;
+  background-color: #f4f4f4;
+}
+#ceopic img{
+  width: 250px;
+  height: 175px;
+  border: 1px solid;
+  margin: 1%;
+}
+#ceopic figcaption{
+  font-size: 70%;
 }
 
 .foodtypeheader h2{
