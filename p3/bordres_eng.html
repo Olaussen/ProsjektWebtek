@@ -25,7 +25,7 @@
       <label for="name"><b>Name</b></label>
       <input id="name" type="text" placeholder="Your name" name="name" required><br>
       <label for="dateinput"><b>Date</b></label>
-      <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
+      <input id="dateinput" type="date" name="date" value="0001-01-01" required min="0001-01-01" max="1111-11-11"><br>
       <label for="time"><b>Time of day</b></label>
       <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
       <label for="amount"><b>Amount of places</b></label>
@@ -38,10 +38,10 @@
       <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
     </form>
   </div>
-  <button class="open-btn" onclick="openForm()">Reserve table</button>
   <script src="scripts/navbar_and_footer.js"></script>
   <script src="scripts/language.js"></script>
   <script src="scripts/reservation.js"></script>
+  <button class="open-btn" onclick="openForm()">Reserve table</button>
 </body>
 
 </html>
