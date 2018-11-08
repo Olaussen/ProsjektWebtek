@@ -1,20 +1,31 @@
-html{scroll-behavior:smooth}
-body{
-  font-family: verdana,Arial, sans-serif;
+/*CSS filen er delt opp i flere segmenter. Først starter den med main (likt for alle sidene),
+så starter den med funksjonaliteten (navbar, footer, language), og til slutt de spesifike html-sidene.*/
+/*-------------------- MAIN --------------------*/
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  font-family: verdana, Arial, sans-serif;
   background-color: #f0f0f0;
   width: 100%;
   margin: 0;
   text-align: center;
 }
 
-hr{
-  height: 30px;
-   border-style: solid;
-   border-color: black;
-   border-width: 1px 0 0 0;
-   border-radius: 20px;
+* {
+  box-sizing: border-box;
 }
-h1{
+
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+h1 {
   padding-top: 3%;
   color: #333;
   text-transform: uppercase;
@@ -23,7 +34,8 @@ h1{
   line-height: 1;
   text-shadow: #3d4D5D 2px 2px 0;
 }
-h3{
+
+h3 {
   color: #333;
   text-transform: uppercase;
   font-size: 1.7em;
@@ -31,130 +43,32 @@ h3{
   line-height: 1;
   text-shadow: #3d4D5D 2px 2px
 }
-h2{
+
+h2 {
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 800;
   line-height: 1;
   text-shadow: #3d4D5D 2px 2px
 }
-/*Margin top sååass stor for å gjøre plass til navbar*/
-#wrapper {
-  margin-top: 125px;
-}
 
-
-
-.contentwrapper{
+.contentwrapper {
   margin: 20px auto;
   width: 80%;
   background-color: #f4f4f4;
 }
-.contentwrapper h2{
+
+.contentwrapper h2 {
   text-align: center;
 }
 
-#aboutuspic{
+.mainpicture {
   width: 100%;
+  margin-top: 125px;
 }
 
-#visjon{
-  margin: 20px auto;
-  width: 65%;
-  background-color: #f4f4f4;
-}
-#ceopic img{
-  width: 250px;
-  height: 175px;
-  border: 1px solid;
-  margin: 1%;
-}
-#ceopic figcaption{
-  font-size: 70%;
-}
-
-.foodtypeheader h2{
-  padding-top: 3%;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 2em;
-  font-weight: 800;
-  line-height: 1;
-  text-shadow: #3d4D5D 2px 2px 0;
-}
-.foodtypeheader h3{
-  font-size: 1.5em;
-}
-
-.foodtypeheader>p{
-  padding: 2%;
-  width: 60%;
-  margin: 2% auto;
-}
-
-.foodtypeheader img{
-  width: 30%;
-}
-
-.foodpic{
-  padding: 2%;
-  border: 3px solid;
-  border-radius: 5%;
-}
-
-.foodline h3{
-  margin-bottom: 0;
-}
-.foodline p{
-  max-width: 30ch;
-  margin:auto;
-}
-
-.foodline div{
-  display: inline-grid;
-  margin: 5%;
-  margin-top: 2%;
-  border-radius: 5%;
-  background:		#d8d8d8;
-}
-.foodline p:nth-child(n+2){
-  margin-top: 2%;
-}
-
-.foodline p:nth-child(3){
-  font-size: 0.6em;
-  padding-bottom: 5%;
-}
-
-#mainpicture{
-  width: 100%;
-
-}
-#allergenliste{
-  max-width: 70ch;
-  margin: auto;
-}
-
-#allergenliste li{
-  font-size: 12px;
-  display: inline;
-}
-#allergenliste h4{
-  margin: 1%;
-}
-#drikkekart div{
-  margin: 10%;
-  max-width: 30ch;
-  background:		#d8d8d8;
-}
-#tempnavbar{
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  background-color: black;
-}
-
-/* ------------------------- NAVBAR -------------------------*/
+/*-------------------- END MAIN --------------------*/
+/*-------------------- NAVBAR --------------------*/
 .navbar_logo {
   position: fixed;
   top: 0;
@@ -195,7 +109,8 @@ h2{
   margin-right: 60px;
   margin-left: 60px;
 }
-.topnav a:last-child{
+
+.topnav a:last-child {
   padding: 7px 8px;
 }
 
@@ -269,90 +184,9 @@ h2{
     }
   }
 }
-/*---------------------END NAVBAR */
 
-/*--------- Bordreservasjon ----------*/
-#reshead {
- width:100%;
- border: 0;
- padding: 0;
-}
-* {box-sizing: border-box;}
-
-.open-btn {
- border-radius: 4px;
- background-color: #555;
- color: white;
- padding: 16px 20px;
- border: none;
- cursor: pointer;
- opacity: 0.8;
- position: fixed;
- bottom: 23px;
- right: 23px;
- width: 280px;
-}
-.contentwrapper{
- margin: 20px auto;
- width: 80%;
- background-color: #f4f4f4;
-}
-.respopup {
- display: none;
- position: fixed;
- bottom: 0;
- right: 15px;
- border: none;
- z-index: 9;
-}
-.myForm {
- border-radius: 4px;
- border: none;
- width: 400px;
- height: 400px;
- padding: 10px;
- background-color: white;
- margin: 0;
-}
-.myForm label{
- float: left;
-}
-.myForm input{
- margin: 0px 10px 22px 10px;
- border: none;
- background: #f1f1f1;
- right: 20px;
- position:fixed;
-}
-.myForm input[type=text]:focus{
- background-color: #ddd;
- outline: none;
-}
-.myForm .btn {
- border-radius: 4px;
- background-color: #003005;
- color: white;
- padding: 16px 20px;
- border: none;
- cursor: pointer;
- margin-bottom: 10px;
- opacity: 0.8;
- position:fixed;
- bottom: 23px;
- right: 128px;
-}
-.myForm .cancel {
- border-radius: 4px;
- background-color: red;
- position: fixed;
- bottom: 23px;
- right: 38px;
-}
-.myForm .btn:hover, .open-btn:hover{
- opacity: 1;
-}
-
-/* ---------- FOOTER ---------- */
+/*-------------------- END NAVBAR --------------------*/
+/*-------------------- FOOTER --------------------*/
 .footer {
   position: absolute;
   padding: 1rem;
@@ -363,47 +197,330 @@ h2{
   left: 0;
   font-family: GT-Pressura-Light;
 }
-#btmInfo{
+
+#btmInfo {
   margin: 20px auto 20px auto;
   width: 80%;
   color: #d1d1d1;
   text-transform: uppercase;
   text-decoration: none;
 }
-.footer a:hover{
+
+.footer a:hover {
   color: inherit;
   text-decoration: none;
 }
-.footer a:visited{
+
+.footer a:visited {
   color: inherit;
   text-decoration: none;
 }
-.footer a:link{
+
+.footer a:link {
   color: inherit;
   text-decoration: none;
 }
-#backToTop{
+
+#backToTop {
   color: #d1d1d1;
 }
-.footer a:active{
+
+.footer a:active {
   color: inherit;
   text-decoration: none;
 }
-#jobbInfo{
+
+#jobbInfo {
   color: #8c8c8c;
 }
 
-/*--------Language css ---------*/
-
-#noflag{
+/*-------------------- END FOOTER --------------------*/
+/*-------------------- LANGUAGE CHANGE --------------------*/
+#noflag {
   height: 30px;
   position: fixed;
   top: 21px;
   left: 20px;
 }
-#usflag{
+
+#usflag {
   height: 30px;
   position: fixed;
   top: 21px;
   left: 70px;
 }
+
+/*-------------------- END LANGUAGE CHANGE --------------------*/
+/*-------------------- ABOUT --------------------*/
+#visjon {
+  margin: 20px auto;
+  width: 65%;
+  background-color: #f4f4f4;
+}
+
+#ceopic img {
+  width: 250px;
+  height: 175px;
+  border: 1px solid;
+  margin: 1%;
+}
+
+#ceopic figcaption {
+  font-size: 70%;
+}
+
+/*-------------------- END ABOUT --------------------*/
+/*-------------------- MENU --------------------*/
+.foodtypeheader h2 {
+  padding-top: 3%;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: #3d4D5D 2px 2px 0;
+}
+
+.foodtypeheader h3 {
+  font-size: 1.5em;
+}
+
+.foodtypeheader>p {
+  padding: 2%;
+  width: 60%;
+  margin: 2% auto;
+}
+
+.foodtypeheader img {
+  width: 30%;
+}
+
+.foodpic {
+  padding: 2%;
+  border: 3px solid;
+  border-radius: 5%;
+}
+
+.foodline h3 {
+  margin-bottom: 0;
+}
+
+.foodline p {
+  max-width: 30ch;
+  margin: auto;
+}
+
+.foodline div {
+  display: inline-grid;
+  margin: 5%;
+  margin-top: 2%;
+  border-radius: 5%;
+  background: #d8d8d8;
+}
+
+.foodline p:nth-child(n+2) {
+  margin-top: 2%;
+}
+
+.foodline p:nth-child(3) {
+  font-size: 0.6em;
+  padding-bottom: 5%;
+}
+
+.foodtypeheader a:link, .foodtypeheader a:hover, .foodtypeheader a:visited, .foodtypeheader a:active {
+  text-decoration: underline;
+  color: black;
+}
+
+#allergenliste {
+  max-width: 70ch;
+  margin: auto;
+}
+
+#allergenliste li {
+  font-size: 12px;
+  display: inline;
+}
+
+#allergenliste h4 {
+  margin: 1%;
+}
+
+#drikkekart div {
+  margin: 10%;
+  max-width: 30ch;
+  background: #d8d8d8;
+}
+
+/*-------------------- END MENU --------------------*/
+/*-------------------- GALLERY --------------------*/
+#slideShow {
+  margin: 0;
+  padding: 0;
+}
+
+#numbertext {
+  background: lightgrey;
+  opacity: 0.5;
+  bottom: 1%;
+  border: none;
+  text-align: center;
+  cursor: default;
+}
+
+#numbertext:hover {
+  opacity: 1;
+}
+
+hr {
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+.Galleri img {
+  width: 300px;
+  padding: 25px;
+  filter: grayscale(100%);
+  transition: 1s;
+  object-fit: scale-down;
+}
+
+.Galleri img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#slider {
+  width: 640px;
+  height: auto;
+  margin: 50px auto;
+  position: relative;
+  border: 10px solid black;
+  box-shadow: 0px 0px 5px 2px darkgrey;
+  background-color: black;
+}
+
+#slider img {
+  width: 100%;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+}
+
+.bigGallery button {
+  padding: 15px;
+  border: none;
+  background: lightgrey;
+  border: solid darkgrey;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0.5;
+}
+
+.bigGallery button:hover {
+  transform: scale(1.2);
+  opacity: 1;
+  background: #37f;
+  border: solid black;
+}
+
+.next {
+  right: 0;
+}
+
+.prew {
+  left: 0;
+}
+
+/* ------------------------- END GALLERY -------------------------*/
+/*-------------------- RESERVATION --------------------*/
+.open-btn {
+  border-radius: 4px;
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 23px;
+  width: 280px;
+}
+
+.contentwrapper {
+  margin: 20px auto;
+  width: 80%;
+  background-color: #f4f4f4;
+}
+
+.respopup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: none;
+  z-index: 9;
+}
+
+.myForm {
+  border-radius: 4px;
+  border: none;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  background-color: white;
+  margin: 0;
+}
+
+.myForm label {
+  float: left;
+}
+
+.myForm input {
+  margin: 0px 10px 22px 10px;
+  border: none;
+  background: #f1f1f1;
+  right: 20px;
+  position: fixed;
+}
+
+.myForm input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.myForm .btn {
+  border-radius: 4px;
+  background-color: #003005;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 128px;
+}
+
+.myForm .cancel {
+  border-radius: 4px;
+  background-color: red;
+  position: fixed;
+  bottom: 23px;
+  right: 38px;
+}
+
+.myForm .btn:hover, .open-btn:hover {
+  opacity: 1;
+}
+
+/*-------------------- END RESERVATION--------------------*/

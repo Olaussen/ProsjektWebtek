@@ -1,44 +1,39 @@
 <!DOCTYPE html>
- <html lang="en-us" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TFP - Table reservation</title>
-    <link rel="stylesheet" href="css/navogres.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>TFP - Table reservation</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
   <body>
-    <div id=wrapper>
-      <img id="reshead" src="images/reshead.png" alt="Reservation header picture">
-    </div>
-    <div class="contentwrapper" id="resContent">
-      <div>
-        <h1>Table reservation</h1>
-        <p>
-          We are offering table reservation at The Fancy Pickle.
-        </p>
-        <p>Everthing you will have to do is to press the button at the bottom the bottom-right of the page and fill the form.</p>
-      </div>
-    </div>
-     <div class="respopup" id="myRes">
-      <form class="myForm">
-        <h2>Reservation</h2>
-         <label for="name"><b>Name</b></label>
-        <input id ="name" type="text" placeholder="Your name" name="name" required><br>
-         <label for="dateinput"><b>Date</b></label>
-        <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
-         <label for="time"><b>Time of day</b></label>
-        <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
-         <label for="amount"><b>Amount of places</b></label>
-        <input id="amount" type="number" name="amount" min="1" value="1" max="30" required><br>
-         <label for="phone"><b>Phone number</b></label>
-        <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br>
-         <label for="info"><b>More information</b></label>
-        <input id="info" type="text" placeholder="..." name="info"><br>
-         <button type="submit" class="btn">Reserve</button>
-        <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
-       </form>
-    </div>
-     <script src="scripts/bordres.js"></script>
-     <button class="open-btn" onclick="openForm()">Reserve table</button>
-  </body>
+    <img class="mainpicture" src="images/bordreseng.jpg" alt="Reservation header picture">
+    <div class="contentwrapper">
+  <div class="respopup" id="myRes">
+    <form class="myForm">
+      <h2>Reservation</h2>
+      <label for="name"><b>Name</b></label>
+      <input id="name" type="text" placeholder="Your name" name="name" required><br>
+      <label for="dateinput"><b>Date</b></label>
+      <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
+      <label for="time"><b>Time of day</b></label>
+      <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
+      <label for="amount"><b>Amount of places</b></label>
+      <input id="amount" type="number" name="amount" min="1" value="1" max="30" required><br>
+      <label for="phone"><b>Phone number</b></label>
+      <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br>
+      <label for="info"><b>More information</b></label>
+      <input id="info" type="text" placeholder="..." name="info"><br>
+      <button type="submit" class="btn">Reserve</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+</div>
+  <button class="open-btn" onclick="openForm()">Reserve table</button>
+  <script src="scripts/navbar_and_footer.js"></script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/reservation.js"></script>
+
+</body>
+
 </html>

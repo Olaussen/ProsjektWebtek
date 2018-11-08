@@ -1,43 +1,46 @@
 <!DOCTYPE html>
- <html lang="no" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TFP - Bordreservasjon</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <div id=wrapper>
-      <img id="reshead" src="images/reshead.png" alt="Reservation header picture">
+<html lang="no" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TFP - Bordreservasjon</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <img class="mainpicture" src="images/reshead.png" alt="Reservation header picture">
+  <div class="contentwrapper" id="resContent">
+    <div>
+      <h1>Bordreservasjon</h1>
+      <p>
+        Vi tilbyr reservering av bord hos The Fancy Pickle.
+      </p>
+      <p>Alt du trenger å gjøre er å trykke på "Reserver bord" knappen nede til høyre og fylle ut skjemaet.</p>
     </div>
-    <div class="contentwrapper" id="resContent">
-      <div>
-        <h1>Bordreservasjon</h1>
-        <p>
-          Vi tilbyr reservering av bord hos The Fancy Pickle.
-        </p>
-        <p>Alt du trenger å gjøre er å trykke på "Reserver bord" knappen nede til høyre og fylle ut skjemaet.</p>
-      </div>
-    </div>
-     <div class="respopup" id="myRes">
-      <form class="myForm">
-        <h2>Reservasjon</h2>
-         <label for="name"><b>Navn</b></label>
-        <input id ="name" type="text" placeholder="Ditt navn" name="name" required><br>
-         <label for="dateinput"><b>Dato</b></label>
-        <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
-         <label for="time"><b>Tidspunkt</b></label>
-        <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
-         <label for="amount"><b>Antall plasser</b></label>
-        <input id="amount" type="number" placeholder="Antall" name="amount" min="1" value="1" max="30" required><br>
-         <label for="phone"><b>Telefonnummer</b></label>
-        <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br>
-         <label for="info"><b>Tilleggsinformasjon</b></label>
-        <input id="info" type="text" placeholder="..." name="info"><br>
-         <button type="submit" class="btn">Reserver</button>
-        <button type="submit" class="btn cancel" onclick="closeForm()">Avbryt</button>
-       </form>
-    </div>
-     <script src="scripts/bordres.js"></script>
-     <button class="open-btn" onclick="openForm()">Reserver bord</button>
-  </body>
+  </div>
+  <div class="respopup" id="myRes">
+    <form class="myForm">
+      <h2>Reservasjon</h2>
+      <label for="name"><b>Navn</b></label>
+      <input id="name" type="text" placeholder="Ditt navn" name="name" required><br>
+      <label for="dateinput"><b>Dato</b></label>
+      <input id="dateinput" type="date" name="date" value="" required min="" max=""><br>
+      <label for="time"><b>Tidspunkt</b></label>
+      <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
+      <label for="amount"><b>Antall plasser</b></label>
+      <input id="amount" type="number" placeholder="Antall" name="amount" min="1" value="1" max="30" required><br>
+      <label for="phone"><b>Telefonnummer</b></label>
+      <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br>
+      <label for="info"><b>Tilleggsinformasjon</b></label>
+      <input id="info" type="text" placeholder="..." name="info"><br>
+      <button type="submit" class="btn">Reserver</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Avbryt</button>
+    </form>
+  </div>
+  <button class="open-btn" onclick="openForm()">Reserver bord</button>
+  <script src="scripts/navbar_and_footer.js"></script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/reservation.js"></script>
+</body>
+
 </html>
