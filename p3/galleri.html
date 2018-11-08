@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html lang="no" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <title> Galleri </title>
-  <link rel="stylesheet" type="text/css" href="css/style_galleri.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <div id="galleriWrapper">
 
-
-    <div id="topp">
-    <img id="hovedbilde" src="images/hovedbilde.jpg" alt="Hovedbilde til siden">
-  </div>
+  <img class="mainpicture" src="images/hovedbilde.jpg" alt="Hovedbilde til siden">
   <div class="contentwrapper">
-  <section class="foodtypeheader">
-    <h1>Bildegalleri</h1>
-    <p>På denne siden kan du bla deg igjennom en rekke bilder fra vår restaurant. Vi har planer om å utvide, men for å gjøre dette
-    trenger vi deres hjelp! Hvis du har et bilde fra vår restuarant, kan du tagge det med #fancypickle eller sende det til oss på en mail
-    til <a href="mailto:bilder@tfp.no?Subject=Bilder" target="_top">BILDER@TFP.NO</a>
-  </section>
-  <hr>
-  <hr>
-  <section class="bildeGalleri2">
-    <h2 id="show">SlideShow</h2>
-    <div id="slider">
-      <div id="box">
-        <img src="images/1.jpg" alt="burger">
+    <section class="foodtypeheader">
+      <h1>Bildegalleri</h1>
+      <p>På denne siden kan du bla deg igjennom en rekke bilder fra vår restaurant. Vi har planer om å utvide, men for å gjøre dette
+        trenger vi deres hjelp! Hvis du har et bilde fra vår restuarant, kan du tagge det med #fancypickle eller sende det til oss på en mail
+        til <a href="mailto:bilder@tfp.no?Subject=Bilder" target="_top">BILDER@TFP.NO</a>
+    </section>
+    <hr>
+    <hr>
+    <section class="bigGallery">
+      <h2 id="show">SlideShow</h2>
+      <div id="slider">
+        <div id="box">
+          <img src="images/1.jpg" alt="burger">
+        </div>
+        <button class="prew" onclick="prevImage()">❮</button>
+        <button class="next" onclick="nextImage()">❯</button>
       </div>
-      <button class="prew" onclick="prevImage()">❮</button>
-      <button class="next" onclick="nextImage()">❯</button>
-    </div>
-</section>
+    </section>
 
-<section class="bildeGalleri">
-  <div class="Galleri">
-  <a href="#show">
-  <img src="images/1.jpg" alt="Burger" onclick="thisImage(1)">
-  <img src="images/2.jpg" alt="Burger" onclick="thisImage(2)">
-  <img src="images/3.jpg" alt="Burger" onclick="thisImage(3)">
-  <img src="images/4.jpg" alt="Burger" onclick="thisImage(4)">
-  <img src="images/5.jpg" alt="Dessert" onclick="thisImage(5)">
-  <img src="images/6.jpg" alt="Dessert"  onclick="thisImage(6)">
-</a>
+    <section class="smallGallery">
+      <div class="Galleri">
+        <a href="#show">
+          <img src="images/1.jpg" alt="Burger" onclick="thisImage(1)">
+          <img src="images/2.jpg" alt="Burger" onclick="thisImage(2)">
+          <img src="images/3.jpg" alt="Burger" onclick="thisImage(3)">
+          <img src="images/4.jpg" alt="Burger" onclick="thisImage(4)">
+          <img src="images/5.jpg" alt="Dessert" onclick="thisImage(5)">
+          <img src="images/6.jpg" alt="Dessert" onclick="thisImage(6)">
+        </a>
+      </div>
+    </section>
+    <hr>
+    <hr>
   </div>
-</section>
-</div>
-</div>
-<hr>
-<hr>
 
 
 
-  <script src="scripts/script_galleri.js"></script>
+  <script src="scripts/navbar_and_footer.js"></script>
+  <script src="scripts/language.js"></script>
+  <script src="scripts/gallery.js"></script>
+
 </body>
