@@ -133,7 +133,7 @@ h2 {
 }
 
 /* Screen less than 925 pixels wide, hides all links and replaces them with the placeholder and menu-icon*/
-@media screen and (max-width: 925px) {
+@media only screen and (max-device-width: 925px), screen and (max-width: 925px) {
   .topnav a {
     display: none;
   }
@@ -149,10 +149,8 @@ h2 {
     right: 0;
     top: 0;
   }
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 925px) {
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .topnav.responsive {
     position: fixed;
   }
@@ -163,25 +161,23 @@ h2 {
     top: 0;
   }
 
-  @media screen and (max-width: 925px) {
-    .topnav {
-      position: fixed;
-      top: 73px;
-    }
+  .topnav {
+    position: fixed;
+    top: 73px;
+  }
 
-    .topnav a.icon {
-      position: absolute;
-    }
+  .topnav a.icon {
+    position: absolute;
+  }
 
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: center;
-    }
-
-    .topnav.responsive p {
-      display: none;
-    }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+/*Deletes placeholder */
+  .topnav.responsive p {
+    display: none;
   }
 }
 
