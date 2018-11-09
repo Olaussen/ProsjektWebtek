@@ -1,4 +1,5 @@
 /*--------Language script--------*/
+/* Slicer navnet til pathen for å sjekke hvilken fil man er i. Bytter til _eng /_no når funksjonene kjøres. */
 function changelang_no_en() {
   if (window.location.pathname.slice(-12) == "bordres.html") {
     window.location.assign(window.location.pathname.slice(0, -12) + "bordres_eng.html");

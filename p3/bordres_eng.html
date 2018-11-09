@@ -20,7 +20,7 @@
       <p>All you have to do, is to press the button below and fill the form.</p><br>
       <button class="open-btn" onclick="openForm()">Reserve table</button>
       <br><br>
-      <p>Remind you to order a table in the opening hours of The Fancy Pickle and latest at 23:30.</p>
+      <p>Remind you to order a table during the opening hours of The Fancy Pickle, one day ahead and latest at 23:30. We are flexible and can also be contacted by phone.</p>
       <h3>Opening hours</h3>
       <p><b>Monday - Thursday:</b> 11:00 - 01:00</p>
       <p><b>Friday - Saturday:</b> 10:00 - 03:00</p>
@@ -28,7 +28,7 @@
   </div>
 </div>
   <div class="respopup" id="myRes">
-    <form class="myForm">
+    <form class="myForm" onsubmit="alert_en()">
       <h2>Reservation</h2>
       <label for="name"><b>Name<sup>*</sup></b></label>
       <input id="name" type="text" placeholder="Your name" name="name" required><br><br>
@@ -50,7 +50,6 @@
   <script src="scripts/navbar_and_footer.js"></script>
   <script src="scripts/language.js"></script>
   <script src="scripts/reservation.js"></script>
-
 </body>
 
 </html>

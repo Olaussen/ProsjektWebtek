@@ -10,9 +10,9 @@ function openForm() {
 function closeForm() {
   document.getElementById("myRes").style.display = "none";
 }
-/* Set min date to today*/
+/* Set min date to today + 1*/
 var today = new Date();
-var dd = today.getDate();
+var dd = today.getDate() + 1;
 var mm = today.getMonth() + 1;
 var yyyy = today.getFullYear();
 if (dd < 10) {
@@ -39,4 +39,13 @@ if (min < 10) {
 }
 now = hrs + ":" + min;
 document.getElementById("time").setAttribute("value", now);
+
+/*Reserve button messages*/
+
+function alert_en(){
+  window.alert("Your reserveration has been regisered. \nYou will recieve a confirmation message on the given phone number.");
+}
+function alert_no(){
+  window.alert("Din reservasjon har blitt registrert. \nDu vil motta en bekreftelsesmelding på det gitte telefonnummeret.");
+}
 //-------------------------------------------------------------------
