@@ -1,5 +1,6 @@
-document.getElementById("resContent").style.minHeight = "1200px"
-
+/*Because of some lack of content (text) on this page, we had to make the height of
+the website 100vh for the footer to stay at the bottom */
+document.getElementById("resContent").style.minHeight = "100vh";
 
 //---------------Reservation form ---------------
 /* Open or close reservation form*/
@@ -42,10 +43,11 @@ document.getElementById("time").setAttribute("value", now);
 
 /*Reserve button messages*/
 
-function alert_en(){
+function alert_en() {
   window.alert("Your reserveration has been regisered. \nYou will recieve a confirmation message on the given phone number.");
 }
-function alert_no(){
+
+function alert_no() {
   window.alert("Din reservasjon har blitt registrert. \nDu vil motta en bekreftelsesmelding på det gitte telefonnummeret.");
 }
 //-------------------------------------------------------------------

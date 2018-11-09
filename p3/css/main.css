@@ -95,6 +95,7 @@ but tweaked a lot so it would fit our site and its requirements*/
   color: #fefefe;
   display: inline-block;
 }
+
 /*styling the top half of the navbar*/
 .navbar_logo {
   background-color: black;
@@ -218,6 +219,7 @@ but tweaked a lot so it would fit our site and its requirements*/
   text-transform: uppercase;
   text-decoration: none;
 }
+
 #backToTop {
   color: #d1d1d1;
 }
@@ -268,7 +270,7 @@ but tweaked a lot so it would fit our site and its requirements*/
 
 /*-------------------- END ABOUT --------------------*/
 /*-------------------- MENU --------------------*/
-.foodtypeheader h2 {
+.contentheader h2 {
   padding-top: 3%;
   color: #333;
   text-transform: uppercase;
@@ -278,14 +280,14 @@ but tweaked a lot so it would fit our site and its requirements*/
   text-shadow: #3d4D5D 2px 2px 0;
 }
 
-.foodtypeheader h3 {
+.contentheader h3 {
   font-size: 1.5em;
 }
 
-.foodtypeheader>p {
+.contentheader>p {
   padding: 2%;
-  width: 60%;
-  margin: 2% auto;
+  margin: 20px auto;
+  width: 65%;
 }
 
 .foodpic {
@@ -323,7 +325,7 @@ but tweaked a lot so it would fit our site and its requirements*/
   padding-bottom: 5%;
 }
 
-.foodtypeheader a:link, .foodtypeheader a:hover, .foodtypeheader a:visited, .foodtypeheader a:active {
+.contentheader a:link, .contentheader a:hover, .contentheader a:visited, .contentheader a:active {
   text-decoration: underline;
   color: black;
 }
@@ -442,6 +444,11 @@ hr {
 
 /* ------------------------- END GALLERY -------------------------*/
 /*-------------------- RESERVATION --------------------*/
+.reserveInfo {
+  width: 60%;
+  margin: 2% auto;
+}
+
 .open-btn {
   border-radius: 4px;
   background-color: #555;
@@ -462,7 +469,7 @@ hr {
   margin-top: -225px;
   margin-left: -200px;
   /*Creates a shadow of the entire page when the reservation-popup is active*/
-  box-shadow: 0px 0px 0px 100vh rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.6);
   z-index: 9;
 }
 

@@ -12,7 +12,7 @@
   <a name="top"></a>
   <img class="mainpicture" src="images/reshead.png" alt="Reservation header picture">
   <div class="contentwrapper" id="resContent">
-    <div>
+    <div class="contentheader">
       <h1>Bordreservasjon</h1>
       <p>
         Vi tilbyr reservering av bord hos The Fancy Pickle.
@@ -20,7 +20,7 @@
       <p>Alt du trenger å gjøre er å trykke på "Reserver bord" knappen nedenfor og fylle ut skjemaet.</p><br>
       <button class="open-btn" onclick="openForm()">Reserver bord</button>
       <br><br>
-      <p>Minner om at bord må bestilles innen The Fancy Pickles åpningstider, én dag i forveien og senest til 23:30. Vi er fleksible og kan også kontaktes på telefon.</p>
+      <p>Minner om at bord må bestilles innen The Fancy Pickles åpningstider og senest til 23:30.</p>
       <h3>Åpningstider</h3>
       <p><b>Mandag - Torsdag:</b> 11:00 - 01:00</p>
       <p><b>Fredag - Lørdag:</b> 10:00 - 03:00</p>
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="respopup" id="myRes">
-    <form class="myForm" onsubmit="alert_no()">
+    <form class="myForm">
       <h2>Reservasjon</h2>
       <label for="name"><b>Navn<sup>*</sup></b></label>
       <input id="name" type="text" placeholder="Ditt navn" name="name" required><br><br>
@@ -50,6 +50,7 @@
   <script src="scripts/navbar_and_footer.js"></script>
   <script src="scripts/reservation.js"></script>
   <script src="scripts/language.js"></script>
+  <!--<button class="open-btn" onclick="openForm()">Reserver bord</button>-->
 </body>
 
 </html>
