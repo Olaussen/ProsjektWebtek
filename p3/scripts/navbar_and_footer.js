@@ -22,7 +22,10 @@ function createNavbar() {
   document.write('<!- NAVBAR --><div class="navbar_logo"><img src="images/logo.png" alt="Picture of our logo" id="logo"></div><div class="languageflags"><input type="image" id="noflag" src="images/noflag.png" name="noflag" alt="Norwegian flag" onclick="changelang_en_no()"><input type="image" id="usflag" src="images/usflag.png" name="usflag" alt="USA Flag" onclick="changelang_no_en()"></div><div class="topnav" id="myTopnav"><p id="placeholder"></p><a href=' + about_link[i] + ' id="om_oss">' + about[i] + '</a><a href=' + meny_link[i] + ' id="meny">' + menu[i] + '</a><a href=' + bordres_link[i] + ' id="reserver">' + reservation[i] + '</a><a href=' + galleri_link[i] + ' id="galleri">' + gallery[i] + '</a><a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()"><img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon"></a></div>');
   document.close();
 }
-createNavbar();
+function createNavbar2() {
+  document.getElementById('navigationbar').innerHTML = ('<!- NAVBAR --><div class="navbar_logo"><img src="images/logo.png" alt="Picture of our logo" id="logo"></div><div class="languageflags"><input type="image" id="noflag" src="images/noflag.png" name="noflag" alt="Norwegian flag" onclick="changelang_en_no()"><input type="image" id="usflag" src="images/usflag.png" name="usflag" alt="USA Flag" onclick="changelang_no_en()"></div><div class="topnav" id="myTopnav"><p id="placeholder"></p><a href=' + about_link[i] + ' id="om_oss">' + about[i] + '</a><a href=' + meny_link[i] + ' id="meny">' + menu[i] + '</a><a href=' + bordres_link[i] + ' id="reserver">' + reservation[i] + '</a><a href=' + galleri_link[i] + ' id="galleri">' + gallery[i] + '</a><a href="javascript:void(0);" id="menu_link" class="icon" onclick="setIcon()"><img id="menu_icon" src="images/burger-menu-bars.png" alt="Menu icon"></a></div>');
+}
+createNavbar2();
 
 //Deklarerer konstanter for bildet av meny-knappen(burger)
 const menuButton = document.getElementById('menu_link');
