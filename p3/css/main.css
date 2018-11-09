@@ -288,14 +288,13 @@ but tweaked a lot so it would fit our site and its requirements*/
   margin: 2% auto;
 }
 
-.foodtypeheader img {
-  width: 30%;
-}
-
 .foodpic {
-  padding: 2%;
   border: 3px solid;
   border-radius: 5%;
+  display: inline-grid;
+  margin: 5%;
+  margin-top: 2%;
+  width: 400px;
 }
 
 .foodline h3 {
