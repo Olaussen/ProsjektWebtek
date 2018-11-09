@@ -17,32 +17,40 @@
       <p>
         We are offering table reservation at The Fancy Pickle.
       </p>
-      <p>All you have to do, is to press the button at the bottom the bottom-right of the page and fill the form.</p>
+      <p>All you have to do, is to press the button below and fill the form.</p><br>
+      <button class="open-btn" onclick="openForm()">Reserve table</button>
+      <br><br>
+      <p>Remind you to order a table in the opening hours of The Fancy Pickle and latest at 23:30.</p>
+      <h3>Opening hours</h3>
+      <p><b>Monday - Thursday:</b> 11:00 - 01:00</p>
+      <p><b>Friday - Saturday:</b> 10:00 - 03:00</p>
+      <p><b>Sunday:</b> 12:00 - 23:00</p>
   </div>
 </div>
   <div class="respopup" id="myRes">
     <form class="myForm">
       <h2>Reservation</h2>
-      <label for="name"><b>Name</b></label>
-      <input id="name" type="text" placeholder="Your name" name="name" required><br>
-      <label for="dateinput"><b>Date</b></label>
-      <input id="dateinput" type="date" name="date" value="0001-01-01" required min="0001-01-01" max="1111-11-11"><br>
-      <label for="time"><b>Time of day</b></label>
-      <input id="time" type="time" name="time" value="" max="02:30" min="10:00" required><br>
-      <label for="amount"><b>Amount of places</b></label>
-      <input id="amount" type="number" name="amount" min="1" value="1" max="30" required><br>
-      <label for="phone"><b>Phone number</b></label>
-      <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br>
+      <label for="name"><b>Name<sup>*</sup></b></label>
+      <input id="name" type="text" placeholder="Your name" name="name" required><br><br>
+      <label for="dateinput"><b>Date<sup>*</sup></b></label>
+      <input id="dateinput" type="date" name="date" value="2018-08-11" required min="2018-08-11" max="2020-11-11"><br><br>
+      <label for="time"><b>Time of day<sup>*</sup></b></label>
+      <input id="time" type="time" name="time" value="12:00" max="23:30" min="10:00" required><br><br>
+      <label for="amount"><b>Amount of places<sup>*</sup></b></label>
+      <input id="amount" type="number" name="amount" min="1" value="1" max="30" required><br><br>
+      <label for="phone"><b>Phone number<sup>*</sup></b></label>
+      <input id="phone" type="text" placeholder="+47 123 45 678" name="phone" required><br><br>
       <label for="info"><b>More information</b></label>
       <input id="info" type="text" placeholder="..." name="info"><br>
+      <p>Fields marked with <sup>*</sup> must be filled out.</p>
       <button type="submit" class="btn">Reserve</button>
-      <button type="submit" class="btn cancel" onclick="closeForm()">Cancel</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
     </form>
   </div>
   <script src="scripts/navbar_and_footer.js"></script>
   <script src="scripts/language.js"></script>
   <script src="scripts/reservation.js"></script>
-  <button class="open-btn" onclick="openForm()">Reserve table</button>
+
 </body>
 
 </html>

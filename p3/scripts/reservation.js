@@ -1,4 +1,4 @@
-document.getElementById("resContent").style.minHeight = "1400px"
+document.getElementById("resContent").style.minHeight = "1200px"
 
 
 //---------------Reservation form ---------------

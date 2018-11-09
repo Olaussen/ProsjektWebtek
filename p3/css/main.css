@@ -450,17 +450,17 @@ hr {
   border: none;
   cursor: pointer;
   opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 23px;
+  position: relative;
   width: 280px;
 }
 
 .respopup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -200px;
   border: none;
   z-index: 9;
 }
@@ -469,7 +469,7 @@ hr {
   border-radius: 4px;
   border: none;
   width: 400px;
-  height: 400px;
+  height: 450px;
   padding: 10px;
   background-color: white;
   margin: 0;
@@ -483,7 +483,8 @@ hr {
   margin: 0px 10px 22px 10px;
   border: none;
   background: #f1f1f1;
-  right: 20px;
+  right: 50%;
+  margin-right: -180px;
   position: fixed;
 }
 
@@ -499,19 +500,22 @@ hr {
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: -192px;
+  margin-right: -72px;
   opacity: 0.8;
   position: fixed;
-  bottom: 23px;
-  right: 128px;
+  bottom: 50%;
+  right: 50%;
 }
 
 .myForm .cancel {
   border-radius: 4px;
   background-color: red;
   position: fixed;
-  bottom: 23px;
-  right: 38px;
+  margin-bottom: -192px;
+  margin-right: -162px;
+  bottom: 50%;
+  right: 50%;
 }
 
 .myForm .btn:hover, .open-btn:hover {
