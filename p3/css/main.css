@@ -58,6 +58,13 @@ h2 {
   background-color: #f4f4f4;
 }
 
+/*Responsive content. Scales with width*/
+@media only screen and (max-device-width: 925px), screen and (max-width: 925px) {
+  .contentwrapper {
+    width: 100%;
+  }
+}
+
 .contentwrapper h2 {
   text-align: center;
 }
@@ -175,7 +182,8 @@ h2 {
     display: block;
     text-align: center;
   }
-/*Deletes placeholder */
+
+  /*Deletes placeholder */
   .topnav.responsive p {
     display: none;
   }
@@ -248,6 +256,11 @@ h2 {
 
 /*-------------------- END LANGUAGE CHANGE --------------------*/
 /*-------------------- ABOUT --------------------*/
+#contactInfo, #openingInfo {
+  width: 60%;
+  margin: 2% auto;
+}
+
 #visjon {
   margin: 20px auto;
   width: 65%;
@@ -297,6 +310,12 @@ h2 {
   border-radius: 5%;
 }
 
+@media only screen and (max-device-width: 925px), screen and (max-width: 925px) {
+  .contentwrapper {
+    width: 100%;
+  }
+}
+
 .foodline h3 {
   margin-bottom: 0;
 }
@@ -326,6 +345,11 @@ h2 {
 .foodtypeheader a:link, .foodtypeheader a:hover, .foodtypeheader a:visited, .foodtypeheader a:active {
   text-decoration: underline;
   color: black;
+}
+
+.drikkekart div, #allergenliste {
+  width: 60%;
+  margin: 2% auto;
 }
 
 #allergenliste {
@@ -449,12 +473,6 @@ hr {
   bottom: 23px;
   right: 23px;
   width: 280px;
-}
-
-.contentwrapper {
-  margin: 20px auto;
-  width: 80%;
-  background-color: #f4f4f4;
 }
 
 .respopup {
