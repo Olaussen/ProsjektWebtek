@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="utf-8">
+  <title>The fancy pickle - P3 Endringer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/burger-icon.png">
+</head>
+
+<body>
+  <div id="wrapper">
+    <ul id="navbar">
+      <li><a href="#nettside">Link til nettside</a></li>
+      <li><a href="#endringer">Endringer</a></li>
+      <li><a href="#plan">Plan</a></li>
+      <li><a href="#beskrivelse">Beskrivelse</a></li>
+      <li><a href="#modularitet">Modularitet</a></li>
+    </ul>
+    <div>
+      <h1>The fancy pickle - P3 Endringer</h1>
+      <p>Noran, Brage, Tarjei, Hauk og Magnus</p>
+      <p>Dato: 11. November 2018</p>
+    </div>
+    <hr>
+    <div class="par">
+      <h2 id="nettside">Vår nettside</h2>
+      <p>For å komme til den endelige nettisden vår, kan du trykke <a href="http://folk.ntnu.no/haukao/documents/p3/about.html">HER</a>. Den er publisert på folk.ntnu.no.</p>
+    </div>
+    <div class="par">
+      <h2 id="endringer">Endringer</h2>
+      <p>Fra vi holdt på med P2 har vir foretatt oss en del endringer. Her kommer det en systematisk beskrivelse av hva vi har gjort, og hvorfor:</p>
+      <h3>Sidestruktur</h3>
+        <p>Selve sidestruktruen har forblitt nesten lik som den var da vi først designet nettsiden. Det eneste er at vi har endret på noen filnavn, og har lagt til nye html-filer for de engelske nettsidene. Vi valgte også å gjøre siden "about.html" til startsiden fremfor en egen "index.html" fil. Dette gjorde vi fordi vi manglet innhold, og vi synes det derfor ble litt dumt med en halvtom side som startside. I tillegg er navbar og footer kombinert til én javascript fil. Ellers har vi byttet ut den generelle "script.js" med "language.js". Vi valgte å droppe en generell scriptfil, og gikk heller for flere filer som hadde hver sin funksjonalitet.</p>
+      <h3>Generell Layout</h3>
+      <p>
+        Vi har forholdt oss til selve temaet som vi bestemte oss for i P2, men har gjort noen få estetiske endringer. Vi ble enige om at et brunt og grønt fargetema ikke passet helt til en restaurant. Vi valgte derfor å heller går for en mer minimalistisk svart-hvit stil på selve nettsiden og navbar/footer. Dette synes vi viste mer "klasse", noe The Fancy Pickle stod for. I tillegg tok vi bort det grønne tintet på bildene, og gikk for flere farger for å ha noen kontraster til den svart-hvite siden. Knappene til språkbytte ble bestemt at skulle være flagg, og disse ble plassert øverst til høyre siden, noe vi glemte å inkludere i P2. Vi endret også selve fonten på nettsiden til "verdana, arial, sans-serif". Vi synes dette passet bedre, pluss at det er kompitabelr med flere nettlesere. I tillegg endret vi stil på logoen for å matche vårt nye tema. Den ble derfor hvit med løkkeskrift. Overskriftene på hovedbildene på de forskjellige sidene ble også endret til en mer passende font. På de forskjellige overskrivtene på sleve siden la vi til skygge bak, og gjorde skriften litt grå-aktig fordi vi synes dette så bra ut.
+      </p>
+      <h3>Navbar</h3>
+      <p>
+        Utenom fargene, endret vi også en litt annet på navbaren. Navigasjonsbaren ble nesten lik, men vi valgte å sette logoen over selve meny-knappene. Dette følte vi skapte et mer fokus rundt selve logoen (ettersom den også heller ikke forble en knapp til "index-html" som vi fjernet). Selve funksjonaliteten ble også gjort litt med. Hvis man drar musepereken over, vil knappen bli hvit med svart skrift (motsatt av opprinnelig). Dette synes vi var passende siden man ser godt hva man er i ferd med å tyrkke seg inn på. Vi endret også på det responsive designet til navbaren. Vi beholdt tanken om at knappene skulle endres til én "burger-bars"-knapp, men vi valgte å faktisk gjøre om denne knappen til en ekte burger siden vi tross alt er et burgersted. VI valgte også å sette den på høyre side av navbaren. Dette synes vi virker mer naturlig. Vi valgte å droppe drop-down-menyen som tok over hele skjermen, men valgte å bruke en drop-down-meny som fortsatt var "fixed" øverst på vinduet til brukeren. På denne måten kan brukeren se på innholdet på siden selv om han/hun vil bytte side. Kontrastene med "hover"-funksjonen valgte vi å inkludere her også.
+      </p>
+      <h3>Footer</h3>
+      <p>
+        På footeren valgte vi å legge til en knapp som tar deg tilbake til toppen av siden. Vi valgte også å simplifisere kontaktinformasjonen, og gikk bort i fra ideen om å implementere google-maps i footeren. I tillegg ble vi inspirert av andre nettsider, og vi valgte derfor å inkludere en seksjon fro jobbsøkere helt nederst.
+      </p>
+      <h3>Om oss</h3>
+      <p>
+        Eneste endringen som ble gjort på denne siden utenom layouten som ble navnt ovenfor, et at vi valgte å ekskludere kart og google maps på siden vår.
+      </p>
+      <h3>Meny</h3>
+      <p>
+        Vi startet med å endre hele layouten på siden. Vi valgte et rute-basert design som ikke båder ser estetisk bra ut, men det fungerer også ypperlig med den responsive siden. Vi endret også litt på farger og slikt for å matche resten av siden. I tillegg la vi til en allergi-liste nederst på siden med tilsvarende nummer på allergi på alle matrettene.
+      </p>
+      <h3>Reserver</h3>
+      <p>
+        På selve bordreservasjonen valgte vi å endre på selve reserveringen. Siden vi akkurat hadde gjort lignende i en øving, valgte vi å holde oss til forms. Dette ble til gjengjeld mye gjort i javascript. Vi valgte å inkludere: Navn, Dato, Tidspunkt, Antall personer, Telefunnummer og tilleggsinformasjon. Når bord var reservert kommer det opp en "alert" som bekrefter dette. Vi valgte også å inkludere åpningstidene til The Fancy Pickle på denne siden, så man slipper å bla tilbake til "om oss"-siden før man reserverer et bord.
+      </p>
+      <h3>Galleri</h3>
+      <p>
+        På galleri-siden valgte vi å inkludere bildene som vises som mindre bilder under selve slider-funksjonen. Brukeren kan på denne måten velge bilde ved å trykke på det mindre bildet under om de ikke ønsker å bla seg gjennom hele albumet. I tillegg la vi til litt tekst som kort fortalt sier at man kan sende inn bilder eller tagge med #fancypickle.
+      </p>
+      <h3>Bilder</h3>
+      <p>
+        Vi valgte som sagt å endre bildene på siden. På grunn av omstendigheter som gjorde at to av våre gruppemedlemmer måtte forlate Trondheim, ble det litt vanskelig å designe bildene likt for alle sidene. For eksempel så har vi to forskjellige bilder på den samme siden på norsk og engelsk, men overall er vi fornøyd med design-endringene på siden.
+      </p>
+      <br>
+      <h2 id="plan">Plan</h2>
+      <p>Som sagt ble det litt vanskelig når to på gruppa ikke var tilstede her i Trondheim, men vi synes alle har klart seg bra. Vi valgte å endre fristen til 7. november siden grunnet hjemreise fikk vi litt mer å gjøre.</p>
+      <p>Minimumskravene ble innfridd selv om vi stokket om litt internt etter at P2 var levert. Her er en oversikt over den "nye" planen:</p>
+      <div id="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Hva?</th>
+              <th>Hvem?</th>
+              <th>Når?</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th>HTML</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>meny.html</td>
+              <td>Hauk</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>bordres.html</td>
+              <td>Brage</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>galleri.html</td>
+              <td>Noran</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>about.html</td>
+              <td>Tarjei & Hauk</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <th>JavaScript</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>navbar_and_footer.js</td>
+              <td>Magnus</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>language.js</td>
+              <td>Brage</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>galleri.js</td>
+              <td>Noran</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <td>bordres.js</td>
+              <td>Brage</td>
+              <td>7. November 2018</td>
+            </tr>
+
+            <tr>
+              <th>CSS</th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>main.css</td>
+              <td>Magnus (alle)</td>
+              <td>7. November.2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 id="beskrivelse">Beskrivelse</h3>
+      <ul>
+        <li>
+          <p>Tarjei bidro i de tidlige stadiene av P3, men siden han var en av de som måtte hjem ble det litt komplisert. Hauk hjalp til med å få ferdigstilt siden "about.html" slik at vi kom i mål.</p>
+        </li>
+        <li>
+          <p>Hauk ble fort ferdig med "meny.html", og lagde også fundamentet til css-filen og about.html. Vi valgte å gå vekk bra den generelle "script.js", så han har heller hjulpet litt der det trengs, som f.eks. å redigere bildene. Oversatte også meny.html.</p>
+        </li>
+        <li>
+          <p>Magnus har hatt ansvaret for navbar og tok også på seg ansvaret for footeren. Dette ble først skrevet inn i hvert html-dokument han fremstilte alt modulært i en js-fil. I starten hadde alle hver sin css-fil, så Magnus hadde hovedansvaret med å kombinere alle disse til én css-fil, pluss gjøre sidene responsive. I tillegg skilte han også kode som gikk igjen i flere javascript. (Skilte ut større kode til flere små scripts). Oversatte about.html.</p>
+        </li>
+        <li>
+          <p>Noran jobbet med galleriets script og tok også på seg ansvaret for galleri.html. Har også bidratt i css-filen. Oversatte galleri.html.</p>
+        </li>
+        <li>
+          <p>
+            Brage jobbet med bordreservasjonen og språkbytte-scriptet, og har også bidratt i css-filen. Oversatte bordres.html.
+          </p>
+        </li>
+      </ul>
+      <h3 id="modularitet">Modularitet</h3>
+      <p>I starten var det en del html-kode som gikk igjen, og dette gjaldt spesielt for navbar og footer. Magnus valgte derfor å benytte seg av javascript for å skrive inn denne gjentakende koden på hvert html-dokument. I starten brukte han noe som het document.write(****HTML-KODE****), men fant så ut at denne koden ble skrevet nederst på html-dokumentet. Selv om css gjorde sånn at navbaren ble flyttet øverst på nettsiden, ville fremdeles kodesnutten stå nederst, noe som ble veldig uoversiktlig. Derfor gikk han over til funksjonen .innerHTML(****HTML-KODE****). På denne måten fikk vi plassert koden direkte inn i en div øverst (navbar) og nederst (footer) på html-dokumentene. I tillegg dukket det opp en ny utfordring. Sidene skulle jo også være på engelsk, noe som krevde at navbar og footer også ble på engelsk. Siden disse var modulære, måtte dette gjøres i js. Han lagde derfor array-variabler for både knappeskriftene, linkene til sidene, og tekst på både footer og navbar. På denne måten har man norsk på den første plassen i variabelen og engelsk på den andre. Man kan derfor velge en variabel
+        <i>i</i> for å bestemme om navbar/footer skal på norsk eller engelsk. F.eks.: footertext[<i>i</i>], også bestemmer Brages language-script hva i skal være ut i fra om man har valgt engelsk eller norsk side. (footertext[0]=footeren på norsk og footertext[1]=footeren på engelsk). På denne måten ble modulariteten løst på både norsk og engelsk.
+      </p>
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
