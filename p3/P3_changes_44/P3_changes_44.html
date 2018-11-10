@@ -20,6 +20,7 @@
     <div>
       <h1>The fancy pickle - P3 Endringer</h1>
       <p>Noran, Brage, Tarjei, Hauk og Magnus</p>
+      <p><b>Gruppe 44</b></p>
       <p>Dato: 11. November 2018</p>
     </div>
     <hr>
@@ -174,7 +175,7 @@
         </li>
       </ul>
       <h3 id="modularitet">Modularitet</h3>
-      <p>I starten var det en del html-kode som gikk igjen, og dette gjaldt spesielt for navbar og footer. Magnus valgte derfor å benytte seg av javascript for å skrive inn denne gjentakende koden på hvert html-dokument. I starten brukte han noe som het document.write(****HTML-KODE****), men fant så ut at denne koden ble skrevet nederst på html-dokumentet. Selv om css gjorde sånn at navbaren ble flyttet øverst på nettsiden, ville fremdeles kodesnutten stå nederst, noe som ble veldig uoversiktlig. Derfor gikk han over til funksjonen .innerHTML(****HTML-KODE****). På denne måten fikk vi plassert koden direkte inn i en div øverst (navbar) og nederst (footer) på html-dokumentene. I tillegg dukket det opp en ny utfordring. Sidene skulle jo også være på engelsk, noe som krevde at navbar og footer også ble på engelsk. Siden disse var modulære, måtte dette gjøres i js. Han lagde derfor array-variabler for både knappeskriftene, linkene til sidene, og tekst på både footer og navbar. På denne måten har man norsk på den første plassen i variabelen og engelsk på den andre. Man kan derfor velge en variabel
+      <p>I starten var det en del html-kode som gikk igjen, og dette gjaldt spesielt for navbar og footer. Magnus valgte derfor å benytte seg av javascript for å skrive inn denne gjentakende koden på hvert html-dokument. I starten brukte han noe som het document.write(****HTML-KODE****), men fant så ut at denne koden ble skrevet nederst på html-dokumentet, siden document.write() skriver inn kode etter at scriptet er kalt opp. Selv om css gjorde sånn at navbaren ble flyttet øverst på nettsiden, ville fremdeles kodesnutten stå nederst, noe som ble veldig uoversiktlig. Derfor gikk han over til funksjonen .innerHTML(****HTML-KODE****). På denne måten fikk vi plassert koden direkte inn i en div øverst (navbar) og nederst (footer) på html-dokumentene. I tillegg dukket det opp en ny utfordring. Sidene skulle jo også være på engelsk, noe som krevde at navbar og footer også ble på engelsk. Siden disse var modulære, måtte dette gjøres i js. Han lagde derfor array-variabler for både knappeskriftene, linkene til sidene, og tekst på både footer og navbar. På denne måten har man norsk på den første plassen i variabelen og engelsk på den andre. Man kan derfor velge en variabel
         <i>i</i> for å bestemme om navbar/footer skal på norsk eller engelsk. F.eks.: footertext[<i>i</i>], også bestemmer Brages language-script hva i skal være ut i fra om man har valgt engelsk eller norsk side. (footertext[0]=footeren på norsk og footertext[1]=footeren på engelsk). På denne måten ble modulariteten løst på både norsk og engelsk.
       </p>
     </div>
