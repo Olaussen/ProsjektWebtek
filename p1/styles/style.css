@@ -53,26 +53,26 @@ li {
   color: rgb(50,70,50);
 }
 
-#navbar li{
+.navbar li{
   display: inline;
   padding: 0.5em;
   font-family: monospace, verdana, helvetica;
   font-size: 110%;
 }
 
-#navbar li a:link{
+.navbar li a:link{
   color: rgb(50,60,50);
 }
 
-#navbar li a:visited{
+.navbar li a:visited{
   color: rgb(50,60,50);
 }
 
-#navbar li a:hover{
+.navbar li a:hover{
   color: rgb(0,255,0);
 }
 
-#navbar:first-child{
+.navbar:first-child{
   padding: 0;
 }
 
