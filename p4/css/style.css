@@ -12,6 +12,9 @@ p {
   font-size: 18px;
   color: rgb(50,70,50);
 }
+.par li{
+  margin: 10px auto 10px auto;
+}
 
 
 h1,h2,h3 {
